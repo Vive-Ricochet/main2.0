@@ -14,13 +14,15 @@ public class PlayerMovement : MonoBehaviour {
 
     public bool dashing;
     private bool canDash = false;//to be used with stamina
+	private bool charging;
 
     void Start() {
 
         // rigid body used for in-engine physics 
         rb = GetComponent<Rigidbody>();
         dashing = false;
-
+		charging = false;
+		
         // gravity is intended to be used for this object
         rb.useGravity = true;
         Physics.gravity = new Vector3(0f, -10.0f, 0f);
@@ -42,7 +44,7 @@ public class PlayerMovement : MonoBehaviour {
 
         // calculate movement transformations
         // (apply only if not dashing currently)
-        if (!dashing) {
+        if (dashing==false && charging == false) {
 
             // Get movement inputs
             newVel += Input.GetAxis("Horizontal") * camRight * speed;
@@ -92,7 +94,14 @@ public class PlayerMovement : MonoBehaviour {
     public bool isDashing() {
         return dashing;
     }
-    
+	
+	public void setCharging(bool input){
+		charging = input;
+	}
+	
+	public bool isCharging(){
+		return charging;
+    }
     public float getSpeed() {
         return speed;
     }
@@ -100,4 +109,6 @@ public class PlayerMovement : MonoBehaviour {
     public float getRotationSpeed() {
         return rotationSpeed;
     }
+	
+	
 }

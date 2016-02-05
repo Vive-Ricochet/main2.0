@@ -31,13 +31,25 @@ public class PlayerDash : MonoBehaviour {
         Vector3 newVel = Vector3.zero;
         
         if (PM) {
-            if (Input.GetButton("Dash")) {
-                newVel = Vector3.zero;
-                dashDir = camDir;
-                GetComponent<PlayerMovement>().setDashing(true);
-
+            if (Input.GetButtonDown("Dash")) {
+                //newVel = Vector3.zero;
+                //dashDir = camDir;
+				print("getbutton");
+				print(PM.isCharging());
+                PM.setCharging(true);
+				print(PM.isCharging());
             }
+			if (!Input.GetButton("Dash") && PM.isCharging()){
+				newVel = Vector3.zero;
+                dashDir = camDir;
+				GetComponent<PlayerMovement>().setCharging(false);
+				print(PM.isCharging());
+                GetComponent<PlayerMovement>().setDashing(true);
+			}
         }
+		if (PM.isCharging() == true){
+				transform.rotation = Quaternion.LookRotation(camDir);
+		}
         if (PM.isDashing()) {
             //transform.position = (newVel);
             dashRecovery++;
