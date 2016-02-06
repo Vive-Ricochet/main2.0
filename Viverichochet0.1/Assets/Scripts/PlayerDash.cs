@@ -11,6 +11,7 @@ public class PlayerDash : MonoBehaviour {
     private float speed;
     private float rotationSpeed;
     private PlayerMovement PM;
+	public string dash = "Dash_P1";
 
     // Use this for initialization
     void Start() {
@@ -31,7 +32,7 @@ public class PlayerDash : MonoBehaviour {
         Vector3 newVel = Vector3.zero;
         
         if (PM) {
-            if (Input.GetButtonDown("Dash")) {
+            if (Input.GetButtonDown(dash)) {
                 //newVel = Vector3.zero;
                 //dashDir = camDir;
 				print("getbutton");
@@ -39,7 +40,7 @@ public class PlayerDash : MonoBehaviour {
                 PM.setCharging(true);
 				print(PM.isCharging());
             }
-			if (!Input.GetButton("Dash") && PM.isCharging()){
+			if (!Input.GetButton(dash) && PM.isCharging()){
 				newVel = Vector3.zero;
                 dashDir = camDir;
 				GetComponent<PlayerMovement>().setCharging(false);

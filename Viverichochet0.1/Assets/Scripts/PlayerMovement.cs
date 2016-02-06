@@ -7,6 +7,12 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField] private float speed = 20;  // player movement speed
     [SerializeField] private float jump = 5;   // player intitial jump velocity
     [SerializeField] private float rotationSpeed = 100; // player rotation speed
+	[SerializeField] private Camera PlayerCamera;
+
+	public string Horizontal;
+	public string Vertical;
+	//public string CameraName = "P1Cam"
+	//public string Jump = "Jump_P1";
 
     // private fields
     private bool grounded;
@@ -32,7 +38,7 @@ public class PlayerMovement : MonoBehaviour {
     void FixedUpdate() {
 
         // get normalized camera forward direction. Ignor Y transformation
-        Vector3 camDir = Camera.main.transform.forward;
+		Vector3 camDir = PlayerCamera.transform.forward;
         camDir.y = 0;
         camDir.Normalize();
 
@@ -47,14 +53,14 @@ public class PlayerMovement : MonoBehaviour {
         if (dashing==false && charging == false) {
 
             // Get movement inputs
-            newVel += Input.GetAxis("Horizontal") * camRight * speed;
-            newVel += Input.GetAxis("Vertical") * camDir * speed;
+            newVel += Input.GetAxis(Horizontal) * camRight * speed;
+			newVel += Input.GetAxis(Vertical) * camDir * speed;
 
             // check input for "Jump" and execute if grounded
-            if ((Input.GetAxis("Jump") == 1) && grounded) {
+//            if ((Input.GetAxis(Jump) == 1) && grounded) {
                 // shoot velocity upwards. 
-                rb.velocity = new Vector3(0.0f, Input.GetAxis("Jump") * jump, 0.0f);
-            }
+  //              rb.velocity = new Vector3(0.0f, Input.GetAxis(Jump) * jump, 0.0f);
+    //        }
 
             // apply new velocity
             transform.position += (newVel * Time.fixedDeltaTime);
