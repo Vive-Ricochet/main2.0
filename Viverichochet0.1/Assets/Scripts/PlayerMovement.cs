@@ -11,8 +11,9 @@ public class PlayerMovement : MonoBehaviour {
 
 	public string Horizontal;
 	public string Vertical;
-	//public string CameraName = "P1Cam"
-	//public string Jump = "Jump_P1";
+    Animator animator;
+    //public string CameraName = "P1Cam"
+    //public string Jump = "Jump_P1";
 
     // private fields
     private bool grounded;
@@ -22,12 +23,15 @@ public class PlayerMovement : MonoBehaviour {
     private bool canDash = false;//to be used with stamina
 	private bool charging;
 
+    float isMoving = 0.0f;
+
     void Start() {
 
         // rigid body used for in-engine physics 
         rb = GetComponent<Rigidbody>();
         dashing = false;
 		charging = false;
+        animator = GetComponent<Animator>();
 		
         // gravity is intended to be used for this object
         rb.useGravity = true;
@@ -53,8 +57,11 @@ public class PlayerMovement : MonoBehaviour {
         if (dashing==false && charging == false) {
 
             // Get movement inputs
+            isMoving = System.Math.Abs(Input.GetAxis(Horizontal));
             newVel += Input.GetAxis(Horizontal) * camRight * speed;
 			newVel += Input.GetAxis(Vertical) * camDir * speed;
+
+            animator.SetFloat("IsMoving", isMoving);
 
             // check input for "Jump" and execute if grounded
 //            if ((Input.GetAxis(Jump) == 1) && grounded) {
