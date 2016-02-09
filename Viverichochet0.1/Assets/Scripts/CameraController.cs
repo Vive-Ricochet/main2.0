@@ -9,6 +9,8 @@ public class CameraController : MonoBehaviour {
     [SerializeField] private float distance = 6.0f;         // distance from target
     [SerializeField] private float xSpeed = 200.0f;         // camera X/Y sensitivity
     [SerializeField] private float ySpeed = 200.0f;
+	public string Camera_Horizontal = "Camera_Horizontal_P1";
+	public string Camera_Vertical = "Camera_Vertical_P1";
 
     // private fields
     private float yMinLimit = -18.0f;   // lower and upper bounds of up/down rotation
@@ -22,8 +24,8 @@ public class CameraController : MonoBehaviour {
             return;
 
         // read axis inputs from something (currently the mouse)
-        xDeg += Input.GetAxis("Mouse X") * xSpeed * 0.02f;
-        yDeg -= Input.GetAxis("Mouse Y") * ySpeed * 0.02f;
+        xDeg += Input.GetAxis(Camera_Horizontal) * xSpeed * 0.02f;
+		yDeg -= Input.GetAxis(Camera_Vertical) * ySpeed * 0.02f;
         yDeg = ClampAngle(yDeg, yMinLimit, yMaxLimit); // Keep up-down rotation within bounds
 
         // camera rotation

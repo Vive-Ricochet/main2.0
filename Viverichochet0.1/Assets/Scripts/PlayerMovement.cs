@@ -7,8 +7,10 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField] private float speed = 20;  // player movement speed
     [SerializeField] private float jump = 5;   // player intitial jump velocity
     [SerializeField] private float rotationSpeed = 100; // player rotation speed
+	[SerializeField] private Camera PlayerCamera;
 
     // private fields
+    PlayerAccesor myStats;
     private bool grounded;
     private Rigidbody rb;
 
@@ -16,23 +18,36 @@ public class PlayerMovement : MonoBehaviour {
     private bool canDash = false;//to be used with stamina
 	private bool charging;
 
+    // public fields
+    public string Horizontal;
+    public string Vertical;
+
     void Start() {
+
+        // initialize my accessor
+        myStats = GetComponent<PlayerAccesor>();
+        myStats.setDashing(false);
+        myStats.setCharging(false);
 
         // rigid body used for in-engine physics 
         rb = GetComponent<Rigidbody>();
         dashing = false;
 		charging = false;
+
+
 		
         // gravity is intended to be used for this object
         rb.useGravity = true;
-        Physics.gravity = new Vector3(0f, -10.0f, 0f);
+        Physics.gravity = new Vector3(0f, -20.0f, 0f);
 
     }
 
     void FixedUpdate() {
 
+        //print(dashing);
+
         // get normalized camera forward direction. Ignor Y transformation
-        Vector3 camDir = Camera.main.transform.forward;
+		Vector3 camDir = PlayerCamera.transform.forward;
         camDir.y = 0;
         camDir.Normalize();
 
@@ -44,17 +59,13 @@ public class PlayerMovement : MonoBehaviour {
 
         // calculate movement transformations
         // (apply only if not dashing currently)
-        if (dashing==false && charging == false) {
+        //if (dashing==false && charging == false) {
+        if ( myStats.isDashing() == false && myStats.isCharging() == false) {
+
 
             // Get movement inputs
-            newVel += Input.GetAxis("Horizontal") * camRight * speed;
-            newVel += Input.GetAxis("Vertical") * camDir * speed;
-
-            // check input for "Jump" and execute if grounded
-            if ((Input.GetAxis("Jump") == 1) && grounded) {
-                // shoot velocity upwards. 
-                rb.velocity = new Vector3(0.0f, Input.GetAxis("Jump") * jump, 0.0f);
-            }
+            newVel += Input.GetAxis(Horizontal) * camRight * speed;
+			newVel += Input.GetAxis(Vertical) * camDir * speed;
 
             // apply new velocity
             transform.position += (newVel * Time.fixedDeltaTime);
@@ -109,6 +120,9 @@ public class PlayerMovement : MonoBehaviour {
     public float getRotationSpeed() {
         return rotationSpeed;
     }
-	
+
+    public Camera getPlayerCamera() {
+        return PlayerCamera;
+    }
 	
 }

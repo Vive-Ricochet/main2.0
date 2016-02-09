@@ -6,18 +6,34 @@ public class PlayerTakingDamage : MonoBehaviour {
     // Fly myself backwards and twirl and shit
     public void FlyBackwards(Transform influencingTransform) {
 
-        Vector3 thatRotation = Vector3.zero;
-        Vector3 thisRotation = Vector3.zero;
+        // Get his and my rotation. Compare them and save the difference
+        Vector3 myRotation = this.transform.rotation.eulerAngles;
+        Vector3 hisRotation = influencingTransform.transform.rotation.eulerAngles;
+        Vector3 diffRotation = myRotation - hisRotation;
+        if (diffRotation.y > 0)
+            diffRotation.y = -359 + diffRotation.y;
 
-        float thatYrotation = influencingTransform.eulerAngles.y;
-        float thisYrotation = transform.eulerAngles.y;
-        thatRotation.y = thatYrotation;
-        thisRotation.y = thisYrotation;
+        // Hit me from behind
+        if (diffRotation.y > -45 || diffRotation.y <= -315) {
+            //print("Behind?\n");
+            this.transform.eulerAngles = hisRotation;
 
-        float diffRotation = thisRotation.y - thatRotation.y;
-        diffRotation = Mathf.Abs(diffRotation);
+        // Hit me from the left
+        }else if(diffRotation.y <= -45 && diffRotation.y > -135) {
+            //print("Left?\n");
+            this.transform.eulerAngles = hisRotation + new Vector3(0f, -90f, 0f);
+            
+        // Hit me from the front
+        }else if (diffRotation.y <= -135 && diffRotation.y > -225) {
+            //print("Front?\n");
+            this.transform.eulerAngles = hisRotation + new Vector3(0f, -180f, 0f);
 
-        print(diffRotation);
-        transform.eulerAngles = new Vector3(0, Mathf.Round(diffRotation / 90) * 90, 0);
+        // Hit me from the right
+        } else if (diffRotation.y <= -225 && diffRotation.y > -315) {
+            //print("Right?\n");
+            this.transform.eulerAngles = hisRotation + new Vector3(0f, +90f, 0f);
+
+        }
+
     }
 }
