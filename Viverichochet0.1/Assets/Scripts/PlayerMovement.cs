@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField] private float speed = 20;  // player movement speed
     [SerializeField] private float jump = 5;   // player intitial jump velocity
     [SerializeField] private float rotationSpeed = 100; // player rotation speed
+	[SerializeField] private Camera PlayerCamera;
 
     // private fields
     private bool grounded;
@@ -15,6 +16,10 @@ public class PlayerMovement : MonoBehaviour {
     public bool dashing;
     private bool canDash = false;//to be used with stamina
 	private bool charging;
+
+    // public fields
+    public string Horizontal;
+    public string Vertical;
 
     void Start() {
 
@@ -31,8 +36,10 @@ public class PlayerMovement : MonoBehaviour {
 
     void FixedUpdate() {
 
+        print(dashing);
+
         // get normalized camera forward direction. Ignor Y transformation
-        Vector3 camDir = Camera.main.transform.forward;
+		Vector3 camDir = PlayerCamera.transform.forward;
         camDir.y = 0;
         camDir.Normalize();
 
@@ -47,14 +54,8 @@ public class PlayerMovement : MonoBehaviour {
         if (dashing==false && charging == false) {
 
             // Get movement inputs
-            newVel += Input.GetAxis("Horizontal") * camRight * speed;
-            newVel += Input.GetAxis("Vertical") * camDir * speed;
-
-            // check input for "Jump" and execute if grounded
-            if ((Input.GetAxis("Jump") == 1) && grounded) {
-                // shoot velocity upwards. 
-                rb.velocity = new Vector3(0.0f, Input.GetAxis("Jump") * jump, 0.0f);
-            }
+            newVel += Input.GetAxis(Horizontal) * camRight * speed;
+			newVel += Input.GetAxis(Vertical) * camDir * speed;
 
             // apply new velocity
             transform.position += (newVel * Time.fixedDeltaTime);
@@ -109,6 +110,9 @@ public class PlayerMovement : MonoBehaviour {
     public float getRotationSpeed() {
         return rotationSpeed;
     }
-	
+
+    public Camera getPlayerCamera() {
+        return PlayerCamera;
+    }
 	
 }
