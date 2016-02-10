@@ -94,7 +94,7 @@ public class CollisionManager : MonoBehaviour {
     void BlowBack(GameObject target, Vector3 direction) {
 
         // how hard it hits
-        float intensity = 10f;
+        float intensity = 12f;
         direction.y = 1;
 
         target.GetComponent<Rigidbody>().AddForce(direction * intensity, ForceMode.Impulse);

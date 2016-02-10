@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour {
 		
         // gravity is intended to be used for this object
         rb.useGravity = true;
-        Physics.gravity = new Vector3(0f, -20.0f, 0f);
+        Physics.gravity = new Vector3(0f, -30.0f, 0f);
 
     }
 
