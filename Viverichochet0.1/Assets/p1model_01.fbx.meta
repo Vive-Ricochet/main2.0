@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 5f43841d30302774fa44eaa05246d425
-timeCreated: 1454998469
+guid: 4097e26cdc9d92248acb78b6a3debcd5
+timeCreated: 1455083080
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -165,16 +165,18 @@ ModelImporter:
     400156: upper neck
     4300000: Cube
     7400000: rig|rigAction
-    7400002: Armature|Pose-LF-LF-Standing
-    7400004: Armature|Pose-LF-RS-Standing
-    7400006: Armature|Pose-LS-RF-Standing
-    7400008: Armature|Pose-LS-RS-Standing
-    7400010: Armature|Running
-    7400012: Armature|Running-Poses-LF-RF
-    7400014: Armature|Running-Poses-LF-RS
-    7400016: Armature|Running-Poses-LS-RF
-    7400018: Armature|Running-Poses-LS-RS
-    7400020: Armature|Standing
+    7400002: Armature|Charge
+    7400004: Armature|Dash
+    7400006: Armature|Pose-LF-LF-Standing
+    7400008: Armature|Pose-LF-RS-Standing
+    7400010: Armature|Pose-LS-RF-Standing
+    7400012: Armature|Pose-LS-RS-Standing
+    7400014: Armature|Running
+    7400016: Armature|Running-Poses-LF-RF
+    7400018: Armature|Running-Poses-LF-RS
+    7400020: Armature|Running-Poses-LS-RF
+    7400022: Armature|Running-Poses-LS-RS
+    7400024: Armature|Standing
     9500000: //RootNode
     13700000: Cube
   materials:
@@ -190,7 +192,7 @@ ModelImporter:
     animationImportErrors: 
     animationImportWarnings: "\nInbetween bone default rotation found in this file
       is different from the one found in the source avatar:\n\t'knee 1' : rotation
-      error = 1.560985 deg\n\t'knee 1.002' : rotation error = 1.560821 deg\n"
+      error = 1.560753 deg\n\t'knee 1.002' : rotation error = 1.561941 deg\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     animationCompression: 3
@@ -412,9 +414,431 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
+      name: Armature|Charge
+      takeName: Armature|Charge
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cube
+        weight: 0
+      - path: rig
+        weight: 1
+      - path: rig/Armature
+        weight: 1
+      - path: rig/Armature/pelvis
+        weight: 0
+      - path: rig/Armature/pelvis/pelvis_end
+        weight: 0
+      - path: rig/Armature/stomach
+        weight: 1
+      - path: rig/Armature/stomach/ribs
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2
+        weight: 0
+      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2/finger
+          1.2_end
+        weight: 0
+      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
+          1.1
+        weight: 0
+      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
+          1.1/finger 1.1_end
+        weight: 0
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
+          1.001
+        weight: 0
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
+          1.001/finger 1.001_end
+        weight: 0
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
+          1
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
+          1/finger 1
+        weight: 0
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
+          1/finger 1/finger 1_end
+        weight: 0
+      - path: rig/Armature/stomach/ribs/chest/lower neck
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head/head_end
+        weight: 0
+      - path: rig/Armature/thigh 1
+        weight: 1
+      - path: rig/Armature/thigh 1/knee 1
+        weight: 1
+      - path: rig/Armature/thigh 1/knee 1/thigh 1.001
+        weight: 1
+      - path: rig/Armature/thigh 1/knee 1/thigh 1.001/heel 1
+        weight: 1
+      - path: rig/Armature/thigh 1/knee 1/thigh 1.001/heel 1/foot 1
+        weight: 1
+      - path: rig/Armature/thigh 1/knee 1/thigh 1.001/heel 1/foot 1/foot 1_end
+        weight: 1
+      - path: rig/Armature/thigh 1.004
+        weight: 1
+      - path: rig/Armature/thigh 1.004/knee 1.002
+        weight: 1
+      - path: rig/Armature/thigh 1.004/knee 1.002/thigh 1.002
+        weight: 1
+      - path: rig/Armature/thigh 1.004/knee 1.002/thigh 1.002/heel 1.002
+        weight: 1
+      - path: rig/Armature/thigh 1.004/knee 1.002/thigh 1.002/heel 1.002/foot 1.002
+        weight: 1
+      - path: rig/Armature/thigh 1.004/knee 1.002/thigh 1.002/heel 1.002/foot 1.002/foot
+          1.002_end
+        weight: 1
+      - path: rig/root
+        weight: 0
+      - path: rig/root/ORG-pelvis
+        weight: 0
+      - path: rig/root/ORG-pelvis/ORG-pelvis_end
+        weight: 0
+      - path: rig/root/ORG-stomach
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
+          1
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
+          1/ORG-finger 1.2
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
+          1/ORG-finger 1.2/ORG-finger 1.2_end
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
+          1/ORG-hand 1.1
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
+          1/ORG-hand 1.1/ORG-finger 1.1
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
+          1/ORG-hand 1.1/ORG-finger 1.1/ORG-finger 1.1_end
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
+          1.002
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
+          1.002/ORG-finger 1.001
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
+          1.002/ORG-finger 1.001/ORG-finger 1.001_end
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
+          1.002/ORG-hand 1
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
+          1.002/ORG-hand 1/ORG-finger 1
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
+          1.002/ORG-hand 1/ORG-finger 1/ORG-finger 1_end
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head/ORG-head_end
+        weight: 0
+      - path: rig/root/ORG-thigh 1
+        weight: 0
+      - path: rig/root/ORG-thigh 1/ORG-knee 1
+        weight: 0
+      - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001
+        weight: 0
+      - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1
+        weight: 0
+      - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
+          1
+        weight: 0
+      - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
+          1/ORG-foot 1_end
+        weight: 0
+      - path: rig/root/ORG-thigh 1.004
+        weight: 0
+      - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002
+        weight: 0
+      - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002
+        weight: 0
+      - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002
+        weight: 0
+      - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
+          1.002
+        weight: 0
+      - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
+          1.002/ORG-foot 1.002_end
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Dash
+      takeName: Armature|Dash
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cube
+        weight: 0
+      - path: rig
+        weight: 1
+      - path: rig/Armature
+        weight: 1
+      - path: rig/Armature/pelvis
+        weight: 0
+      - path: rig/Armature/pelvis/pelvis_end
+        weight: 0
+      - path: rig/Armature/stomach
+        weight: 1
+      - path: rig/Armature/stomach/ribs
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2
+        weight: 0
+      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2/finger
+          1.2_end
+        weight: 0
+      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
+          1.1
+        weight: 0
+      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
+          1.1/finger 1.1_end
+        weight: 0
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
+          1.001
+        weight: 0
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
+          1.001/finger 1.001_end
+        weight: 0
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
+          1
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
+          1/finger 1
+        weight: 0
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
+          1/finger 1/finger 1_end
+        weight: 0
+      - path: rig/Armature/stomach/ribs/chest/lower neck
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head/head_end
+        weight: 0
+      - path: rig/Armature/thigh 1
+        weight: 1
+      - path: rig/Armature/thigh 1/knee 1
+        weight: 1
+      - path: rig/Armature/thigh 1/knee 1/thigh 1.001
+        weight: 1
+      - path: rig/Armature/thigh 1/knee 1/thigh 1.001/heel 1
+        weight: 1
+      - path: rig/Armature/thigh 1/knee 1/thigh 1.001/heel 1/foot 1
+        weight: 1
+      - path: rig/Armature/thigh 1/knee 1/thigh 1.001/heel 1/foot 1/foot 1_end
+        weight: 1
+      - path: rig/Armature/thigh 1.004
+        weight: 1
+      - path: rig/Armature/thigh 1.004/knee 1.002
+        weight: 1
+      - path: rig/Armature/thigh 1.004/knee 1.002/thigh 1.002
+        weight: 1
+      - path: rig/Armature/thigh 1.004/knee 1.002/thigh 1.002/heel 1.002
+        weight: 1
+      - path: rig/Armature/thigh 1.004/knee 1.002/thigh 1.002/heel 1.002/foot 1.002
+        weight: 1
+      - path: rig/Armature/thigh 1.004/knee 1.002/thigh 1.002/heel 1.002/foot 1.002/foot
+          1.002_end
+        weight: 1
+      - path: rig/root
+        weight: 0
+      - path: rig/root/ORG-pelvis
+        weight: 0
+      - path: rig/root/ORG-pelvis/ORG-pelvis_end
+        weight: 0
+      - path: rig/root/ORG-stomach
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
+          1
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
+          1/ORG-finger 1.2
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
+          1/ORG-finger 1.2/ORG-finger 1.2_end
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
+          1/ORG-hand 1.1
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
+          1/ORG-hand 1.1/ORG-finger 1.1
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
+          1/ORG-hand 1.1/ORG-finger 1.1/ORG-finger 1.1_end
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
+          1.002
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
+          1.002/ORG-finger 1.001
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
+          1.002/ORG-finger 1.001/ORG-finger 1.001_end
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
+          1.002/ORG-hand 1
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
+          1.002/ORG-hand 1/ORG-finger 1
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
+          1.002/ORG-hand 1/ORG-finger 1/ORG-finger 1_end
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head
+        weight: 0
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head/ORG-head_end
+        weight: 0
+      - path: rig/root/ORG-thigh 1
+        weight: 0
+      - path: rig/root/ORG-thigh 1/ORG-knee 1
+        weight: 0
+      - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001
+        weight: 0
+      - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1
+        weight: 0
+      - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
+          1
+        weight: 0
+      - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
+          1/ORG-foot 1_end
+        weight: 0
+      - path: rig/root/ORG-thigh 1.004
+        weight: 0
+      - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002
+        weight: 0
+      - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002
+        weight: 0
+      - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002
+        weight: 0
+      - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
+          1.002
+        weight: 0
+      - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
+          1.002/ORG-foot 1.002_end
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
       name: Armature|Pose-LF-LF-Standing
       takeName: Armature|Pose-LF-LF-Standing
-      firstFrame: 0
+      firstFrame: 21.8
       lastFrame: 23
       wrapMode: 0
       orientationOffsetY: 0
@@ -625,7 +1049,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Armature|Pose-LF-RS-Standing
       takeName: Armature|Pose-LF-RS-Standing
-      firstFrame: 0
+      firstFrame: 21.8
       lastFrame: 23
       wrapMode: 0
       orientationOffsetY: 0
@@ -836,7 +1260,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Armature|Pose-LS-RF-Standing
       takeName: Armature|Pose-LS-RF-Standing
-      firstFrame: 0
+      firstFrame: 20.6
       lastFrame: 23
       wrapMode: 0
       orientationOffsetY: 0
@@ -1047,7 +1471,7 @@ ModelImporter:
     - serializedVersion: 16
       name: Armature|Pose-LS-RS-Standing
       takeName: Armature|Pose-LS-RS-Standing
-      firstFrame: 0
+      firstFrame: 21.2
       lastFrame: 23
       wrapMode: 0
       orientationOffsetY: 0
@@ -1267,7 +1691,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 0
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -1478,7 +1902,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 0
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -1689,7 +2113,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 0
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -1900,7 +2324,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 0
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -2111,7 +2535,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 0
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -2716,7 +3140,7 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: p1model(Clone)
+    - name: p1model_01(Clone)
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -2732,39 +3156,39 @@ ModelImporter:
       scale: {x: 28.450567, y: 28.45057, z: 28.45057}
       transformModified: 1
     - name: Armature
-      position: {x: 0.000067317334, y: 0.0075394185, z: 0.060191598}
+      position: {x: 0.000067317334, y: 0.0075394185, z: 0.060191214}
       rotation: {x: 0.70796454, y: -1.5719973e-16, z: 3.3397004e-23, w: 0.706248}
       scale: {x: 1.2519907, y: 1.2519907, z: 1.2519907}
       transformModified: 1
     - name: stomach
       position: {x: 9.3074964e-20, y: 0.0000010150768, z: 0.010418156}
-      rotation: {x: 0.075040266, y: 0.000000025024082, z: -0.000000017808306, w: 0.9971805}
-      scale: {x: 1, y: 0.9999999, z: 1}
+      rotation: {x: 0.075040266, y: 0.000000025024082, z: -0.000000017808302, w: 0.9971805}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
       transformModified: 1
     - name: ribs
-      position: {x: -1.8611563e-26, y: 0.009625, z: 1.4901161e-10}
-      rotation: {x: -0.18042243, y: 6.2172494e-15, z: -6.2172494e-15, w: 0.98358923}
-      scale: {x: 1, y: 0.9999997, z: 0.99999976}
+      position: {x: -6.617445e-26, y: 0.009625, z: -1.4901161e-10}
+      rotation: {x: -0.18042241, y: 4.996004e-15, z: -1.08801865e-14, w: 0.98358923}
+      scale: {x: 1, y: 1, z: 0.9999998}
       transformModified: 1
     - name: chest
-      position: {x: 1.6543612e-26, y: 0.008016878, z: 0}
-      rotation: {x: 0.15574467, y: -5.3290705e-15, z: 1.6320278e-14, w: 0.98779744}
-      scale: {x: 1, y: 1.0000001, z: 0.99999994}
+      position: {x: 3.3087224e-26, y: 0.008016879, z: 4.4703483e-10}
+      rotation: {x: 0.15574466, y: -1.7763568e-15, z: 1.731948e-14, w: 0.98779744}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
       transformModified: 1
     - name: lower neck
-      position: {x: 7.444625e-26, y: 0.0071462397, z: -8.9406965e-10}
-      rotation: {x: -0.020079484, y: -2.0539126e-15, z: -1.5654145e-14, w: 0.9997984}
-      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+      position: {x: 3.3087224e-26, y: 0.0071462416, z: 7.4505804e-11}
+      rotation: {x: -0.020079484, y: -3.608225e-15, z: -1.204592e-14, w: 0.9997984}
+      scale: {x: 1, y: 0.9999998, z: 0.9999998}
       transformModified: 1
     - name: upper neck
-      position: {x: 8.685396e-26, y: 0.0016758937, z: -4.4703483e-10}
-      rotation: {x: 0.007140854, y: -0.01431952, z: 0.0020473734, w: 0.9998699}
-      scale: {x: 0.9999999, y: 1, z: 0.99999994}
+      position: {x: -6.617445e-26, y: 0.001675896, z: 1.4901161e-10}
+      rotation: {x: 0.0071408576, y: -0.014319519, z: 0.0020473727, w: 0.9998699}
+      scale: {x: 0.9999999, y: 0.9999998, z: 0.9999998}
       transformModified: 1
     - name: head
-      position: {x: -8.731149e-12, y: 0.001362974, z: -9.278301e-10}
-      rotation: {x: -0.02203835, y: 0.78783894, z: -0.03598334, w: 0.6144341}
-      scale: {x: 1.0000001, y: 0.99999994, z: 1}
+      position: {x: 7.566996e-12, y: 0.0013629736, z: -2.3866958e-10}
+      rotation: {x: -0.022038369, y: 0.787839, z: -0.03598337, w: 0.6144341}
+      scale: {x: 1.0000004, y: 1, z: 1}
       transformModified: 1
     - name: head_end
       position: {x: -0, y: 0.014425571, z: 0}
@@ -2772,29 +3196,29 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: collar 1
-      position: {x: -0.0011301236, y: 0.006108448, z: 0.000084285886}
-      rotation: {x: -0.12769683, y: 0.05727812, z: 0.80233634, w: 0.580232}
-      scale: {x: 0.99999964, y: 1, z: 1.0000005}
+      position: {x: -0.0011301236, y: 0.00610845, z: 0.00008428633}
+      rotation: {x: -0.12769689, y: 0.05727806, z: 0.8023365, w: 0.58023185}
+      scale: {x: 0.9999999, y: 0.99999994, z: 1}
       transformModified: 1
     - name: bicep 1
-      position: {x: -0.0000000013411044, y: 0.005065767, z: 4.4703483e-10}
-      rotation: {x: 0.05645201, y: -0.08446003, z: -0.115329646, w: 0.9881188}
-      scale: {x: 1.0000002, y: 0.9999996, z: 1}
+      position: {x: 8.1956386e-10, y: 0.005065768, z: -8.9406965e-10}
+      rotation: {x: 0.056452192, y: -0.08446005, z: -0.1153299, w: 0.98811877}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000005}
       transformModified: 1
     - name: tricep 1
-      position: {x: -0, y: 0.01609418, z: 0}
-      rotation: {x: -0.0014666853, y: -0.00029525172, z: -0.01292662, w: 0.9999154}
-      scale: {x: 0.9999998, y: 1.0000006, z: 1}
+      position: {x: -1.4901161e-10, y: 0.016094184, z: -0.0000000019557773}
+      rotation: {x: -0.001466634, y: -0.0002952038, z: -0.012926648, w: 0.9999154}
+      scale: {x: 0.9999999, y: 1.0000001, z: 0.9999997}
       transformModified: 1
     - name: hand 1.1
-      position: {x: 0.000000003427267, y: 0.01231214, z: -0.0000000031292438}
-      rotation: {x: 0.25866982, y: -0.04004476, z: -0.05803547, w: 0.963389}
-      scale: {x: 1.0000002, y: 1, z: 1.0000001}
+      position: {x: -7.4505804e-11, y: 0.012312131, z: -5.9604643e-10}
+      rotation: {x: 0.2586698, y: -0.040044818, z: -0.058035478, w: 0.9633889}
+      scale: {x: 0.99999994, y: 0.99999964, z: 0.99999994}
       transformModified: 1
     - name: finger 1.1
-      position: {x: -0.000000002980232, y: 0.0048109773, z: -0.000000002682209}
-      rotation: {x: -0.23229825, y: 0.066759035, z: 0.13698737, w: 0.9606327}
-      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+      position: {x: -1.4901161e-10, y: 0.004810979, z: 0.000000006556511}
+      rotation: {x: -0.23229825, y: 0.066759035, z: 0.13698736, w: 0.9606327}
+      scale: {x: 1, y: 0.99999994, z: 1.0000004}
       transformModified: 1
     - name: finger 1.1_end
       position: {x: -0, y: 0.0044499952, z: 0}
@@ -2802,9 +3226,9 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: finger 1.2
-      position: {x: -0.000009528696, y: 0.017131388, z: -0.002122101}
-      rotation: {x: 0.008136896, y: -0.99095756, z: -0.08303997, w: 0.105078034}
-      scale: {x: 0.9999998, y: 1.0000007, z: 1.0000001}
+      position: {x: -0.000009530782, y: 0.017131383, z: -0.002122101}
+      rotation: {x: 0.008136865, y: -0.9909575, z: -0.08303989, w: 0.10507796}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
       transformModified: 1
     - name: finger 1.2_end
       position: {x: -0, y: 0.003451265, z: 0}
@@ -2812,29 +3236,29 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: collar 1.003
-      position: {x: 0.0010225886, y: 0.0061084577, z: 0.00008428737}
-      rotation: {x: 0.19950837, y: 0.17444526, z: -0.78756464, w: 0.5563339}
-      scale: {x: 1, y: 1.0000001, z: 1.0000002}
+      position: {x: 0.0010225886, y: 0.006108459, z: 0.00008428775}
+      rotation: {x: 0.1995084, y: 0.1744452, z: -0.7875646, w: 0.55633384}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
       transformModified: 1
     - name: bicep 1.002
-      position: {x: 2.9802322e-10, y: 0.00509107, z: 0.000000002682209}
-      rotation: {x: -0.12785517, y: 0.94116086, z: 0.0061944835, w: 0.31277937}
-      scale: {x: 1.0000007, y: 0.99999976, z: 1.0000001}
+      position: {x: -8.1956386e-10, y: 0.005091073, z: -0.0000000032782554}
+      rotation: {x: -0.12785517, y: 0.9411609, z: 0.006194336, w: 0.3127793}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
       transformModified: 1
     - name: tricep 1.002
-      position: {x: 7.45058e-10, y: 0.016080135, z: 7.45058e-10}
-      rotation: {x: -0.0070360224, y: -0.23319516, z: -0.0007032154, w: 0.97240424}
-      scale: {x: 0.99999946, y: 1.0000007, z: 1}
+      position: {x: 0.0000000010430813, y: 0.016080137, z: 5.9604643e-10}
+      rotation: {x: -0.0070360275, y: -0.23319522, z: -0.00070327515, w: 0.9724043}
+      scale: {x: 1.0000001, y: 0.9999999, z: 1.0000002}
       transformModified: 1
     - name: hand 1
-      position: {x: -8.9406965e-10, y: 0.011058872, z: 0.0000000011920929}
-      rotation: {x: -0.16134329, y: 0.3431568, z: -0.029794842, w: 0.92483735}
-      scale: {x: 0.99999976, y: 0.9999997, z: 1}
+      position: {x: 2.9802322e-10, y: 0.011058876, z: -0.0000000011920929}
+      rotation: {x: -0.16134323, y: 0.34315687, z: -0.029794898, w: 0.92483723}
+      scale: {x: 0.99999994, y: 1, z: 1.0000001}
       transformModified: 1
     - name: finger 1
-      position: {x: 5.9604643e-10, y: 0.0066574533, z: -8.9406965e-10}
-      rotation: {x: 0.16133519, y: -0.52068144, z: 0.042470563, w: 0.83729213}
-      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000002}
+      position: {x: 0.0000000016391277, y: 0.0066574495, z: 0.0000000019371509}
+      rotation: {x: 0.16133517, y: -0.5206815, z: 0.042470712, w: 0.8372921}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
       transformModified: 1
     - name: finger 1_end
       position: {x: -0, y: 0.0038912802, z: 0}
@@ -2842,9 +3266,9 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: finger 1.001
-      position: {x: 0.0010479923, y: 0.01742163, z: 0.0012745477}
-      rotation: {x: -0.053172313, y: 0.9107332, z: -0.054106355, w: 0.40596846}
-      scale: {x: 1.0000002, y: 0.9999998, z: 0.9999996}
+      position: {x: 0.0010479913, y: 0.017421633, z: 0.001274546}
+      rotation: {x: -0.0531722, y: 0.9107332, z: -0.054106385, w: 0.40596846}
+      scale: {x: 0.9999998, y: 0.99999994, z: 0.9999994}
       transformModified: 1
     - name: finger 1.001_end
       position: {x: -0, y: 0.0035595968, z: 0}
@@ -2863,28 +3287,28 @@ ModelImporter:
       transformModified: 1
     - name: thigh 1
       position: {x: -0.00566155, y: -0.0037580472, z: 0.010656295}
-      rotation: {x: -0.00015008052, y: 0.029537657, z: 0.9993456, w: -0.020878585}
-      scale: {x: 0.9999867, y: 0.9999971, z: 0.99997973}
+      rotation: {x: -0.0001500818, y: 0.02953765, z: 0.9993456, w: -0.020878589}
+      scale: {x: 0.9999882, y: 0.9999995, z: 0.99997604}
       transformModified: 1
     - name: knee 1
-      position: {x: -7.4505804e-11, y: 0.02400735, z: -0.000000001139706}
-      rotation: {x: -0.08793463, y: -0.9616906, z: 0.25941855, w: -0.01098578}
-      scale: {x: 0.99999964, y: 0.99999964, z: 0.9999998}
+      position: {x: -4.1909515e-10, y: 0.024007354, z: 5.0058585e-10}
+      rotation: {x: -0.08793489, y: -0.96169025, z: 0.2594197, w: -0.010985772}
+      scale: {x: 0.9999999, y: 0.99999994, z: 1.0000002}
       transformModified: 1
     - name: thigh 1.001
-      position: {x: 3.7252902e-11, y: 0.0025935874, z: 0.0000000011082738}
-      rotation: {x: -0.2812369, y: 0.17574368, z: -0.13547055, w: 0.9336315}
-      scale: {x: 1.0000005, y: 0.99999493, z: 1.0000054}
+      position: {x: -2.9802322e-10, y: 0.00259359, z: -8.475035e-10}
+      rotation: {x: -0.28123823, y: 0.17574315, z: -0.1354709, w: 0.9336311}
+      scale: {x: 1.0000005, y: 0.99999076, z: 1.0000086}
       transformModified: 1
     - name: heel 1
-      position: {x: -7.4505804e-11, y: 0.016946966, z: 0.0000000014575198}
-      rotation: {x: -0.075596906, y: 0.92890096, z: 0.36223692, w: -0.0145811485}
-      scale: {x: 1.0000002, y: 0.9999986, z: 1.0000007}
+      position: {x: -6.61239e-10, y: 0.016946955, z: 8.381903e-11}
+      rotation: {x: -0.07559691, y: 0.92890096, z: 0.3622369, w: -0.014581149}
+      scale: {x: 1, y: 0.9999983, z: 1.0000012}
       transformModified: 1
     - name: foot 1
-      position: {x: -3.72529e-10, y: 0.0053305677, z: 0.0000000010244549}
-      rotation: {x: 0.16135472, y: -0.53713447, z: -0.826668, w: 0.045511685}
-      scale: {x: 0.99999964, y: 1.000002, z: 0.9999976}
+      position: {x: 3.72529e-10, y: 0.005330566, z: 9.778887e-10}
+      rotation: {x: 0.16135472, y: -0.53713447, z: -0.826668, w: 0.045511693}
+      scale: {x: 1, y: 1.0000017, z: 0.9999985}
       transformModified: 1
     - name: foot 1_end
       position: {x: -0, y: 0.00827789, z: 0}
@@ -2893,28 +3317,28 @@ ModelImporter:
       transformModified: 1
     - name: thigh 1.004
       position: {x: 0.005554015, y: -0.0037580458, z: 0.010656298}
-      rotation: {x: -0.0013424512, y: 0.029568842, z: 0.9993447, w: 0.020834422}
-      scale: {x: 0.99998903, y: 1.0000001, z: 0.9999781}
+      rotation: {x: -0.001342451, y: 0.029568845, z: 0.9993447, w: 0.020834418}
+      scale: {x: 0.9999902, y: 0.9999772, z: 1.0000001}
       transformModified: 1
     - name: knee 1.002
-      position: {x: -9.73232e-10, y: 0.024007356, z: 0.0000000014447141}
-      rotation: {x: 0.08527549, y: -0.96158546, z: 0.2603061, w: 0.017955417}
-      scale: {x: 1.0000001, y: 1.0000002, z: 1}
+      position: {x: -6.426126e-10, y: 0.024007356, z: -2.4912877e-10}
+      rotation: {x: 0.08527306, y: -0.96158826, z: 0.2602965, w: 0.01795562}
+      scale: {x: 0.9999997, y: 1.0000004, z: 1}
       transformModified: 1
     - name: thigh 1.002
-      position: {x: -3.72529e-10, y: 0.0025935895, z: -0.00000000115484}
-      rotation: {x: -0.27934656, y: -0.20482652, z: 0.13932945, w: 0.9276847}
-      scale: {x: 1.0000006, y: 0.9999906, z: 1.0000093}
+      position: {x: -5.2154064e-10, y: 0.0025935888, z: -4.9360094e-10}
+      rotation: {x: -0.27933794, y: -0.20482416, z: 0.13932471, w: 0.92768854}
+      scale: {x: 0.9999994, y: 1.0000106, z: 0.9999901}
       transformModified: 1
     - name: heel 1.002
-      position: {x: -1.3038516e-10, y: 0.016946953, z: 7.636845e-10}
-      rotation: {x: 0.08129828, y: 0.9289303, z: 0.36099976, w: -0.012587178}
-      scale: {x: 0.9999994, y: 0.9999982, z: 1.0000012}
+      position: {x: -3.9115547e-10, y: 0.016946955, z: -1.44355e-10}
+      rotation: {x: 0.081298284, y: 0.9289302, z: 0.36099982, w: -0.012587179}
+      scale: {x: 0.9999996, y: 1.000001, z: 0.9999984}
       transformModified: 1
     - name: foot 1.002
-      position: {x: 1.4901161e-10, y: 0.005330559, z: 0.0000000014342367}
-      rotation: {x: 0.049985476, y: -0.53266877, z: -0.84078306, w: 0.08276061}
-      scale: {x: 0.99999976, y: 1.0000005, z: 0.99999857}
+      position: {x: -5.2154064e-10, y: 0.0053305603, z: -9.0105456e-10}
+      rotation: {x: 0.04998545, y: -0.53266877, z: -0.8407831, w: 0.08276059}
+      scale: {x: 1.0000001, y: 0.999999, z: 1.0000008}
       transformModified: 1
     - name: foot 1.002_end
       position: {x: -0, y: 0.008277892, z: 0}

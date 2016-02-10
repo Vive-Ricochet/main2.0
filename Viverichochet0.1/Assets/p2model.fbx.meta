@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 65cddaf28c967ee46ac50580313fa5ce
-timeCreated: 1454998390
+guid: b63ea47a19278cc47af0930fe2fccdc9
+timeCreated: 1455083011
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -165,16 +165,18 @@ ModelImporter:
     400156: upper neck
     4300000: Cube
     7400000: rig|rigAction
-    7400002: Armature|Pose-LF-LF-Standing
-    7400004: Armature|Pose-LF-RS-Standing
-    7400006: Armature|Pose-LS-RF-Standing
-    7400008: Armature|Pose-LS-RS-Standing
-    7400010: Armature|Running
-    7400012: Armature|Running-Poses-LF-RF
-    7400014: Armature|Running-Poses-LF-RS
-    7400016: Armature|Running-Poses-LS-RF
-    7400018: Armature|Running-Poses-LS-RS
-    7400020: Armature|Standing
+    7400002: Armature|Charge
+    7400004: Armature|Dash
+    7400006: Armature|Pose-LF-LF-Standing
+    7400008: Armature|Pose-LF-RS-Standing
+    7400010: Armature|Pose-LS-RF-Standing
+    7400012: Armature|Pose-LS-RS-Standing
+    7400014: Armature|Running
+    7400016: Armature|Running-Poses-LF-RF
+    7400018: Armature|Running-Poses-LF-RS
+    7400020: Armature|Running-Poses-LS-RF
+    7400022: Armature|Running-Poses-LS-RS
+    7400024: Armature|Standing
     9500000: //RootNode
     13700000: Cube
   materials:
