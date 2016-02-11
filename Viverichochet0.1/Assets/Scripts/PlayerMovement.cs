@@ -40,6 +40,7 @@ public class PlayerMovement : MonoBehaviour {
         animator = GetComponent<Animator>();
 
 
+
 		
         // gravity is intended to be used for this object
         rb.useGravity = true;
@@ -78,6 +79,7 @@ public class PlayerMovement : MonoBehaviour {
             if (isMovingH > 0) animator.SetFloat("IsMoving", isMovingH);
             if (isMovingV > 0) animator.SetFloat("IsMoving", isMovingV);
             if (isMovingH == 0 && isMovingV == 0) animator.SetFloat("IsMoving", isMovingH);
+
 
             // apply new velocity
             transform.position += (newVel * Time.fixedDeltaTime);

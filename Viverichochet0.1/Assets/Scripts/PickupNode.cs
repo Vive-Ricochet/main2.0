@@ -10,6 +10,8 @@ public class PickupNode : MonoBehaviour {
 	private float totalDef;
 
 	//Getters
+    // private fields
+
     public Transform getTransform() {
         return this.transform;
     }

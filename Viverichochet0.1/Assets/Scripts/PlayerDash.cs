@@ -119,7 +119,7 @@ public class PlayerDash : MonoBehaviour {
             myStats.setColliding(false);
         }
     }
-
+		
     public void ResetDash() {
         dashRecovery = 0;
     }

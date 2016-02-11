@@ -34,6 +34,7 @@ public class PlayerNodesManager : MonoBehaviour {
     Animator animate;
 	PlayerItemManager itemManager;
 
+
     // On scene load, do this...
     void Start() {
 
@@ -49,6 +50,7 @@ public class PlayerNodesManager : MonoBehaviour {
 
         animate = GetComponent<Animator>();
 		itemManager = GetComponent<PlayerItemManager> ();
+
         // NOTE: 
         //      "Node Position" is really only the coordinates of game objects called
         // "Left Arm Node", "Right Arm Node" and such. The Nodes themselves are a part
@@ -99,6 +101,7 @@ public class PlayerNodesManager : MonoBehaviour {
 				if (canPickUpR) {
 					AppendItem (otherObject, "Right Arm Node");
 				}
+
             }
         }
     }
@@ -121,6 +124,7 @@ public class PlayerNodesManager : MonoBehaviour {
 		if (otherObject.transform.GetComponentInParent<PickupNode>() != null) {
 			print(otherObject.transform.GetComponentInParent<PickupNode>().getNodeAtk());
 			print (otherObject.transform.GetComponentInParent<PickupNode> ().getNodeProps ());
+
         }
     }
 

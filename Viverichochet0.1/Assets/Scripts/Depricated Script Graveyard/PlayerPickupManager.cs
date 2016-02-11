@@ -5,8 +5,8 @@ public class PlayerPickupManager : MonoBehaviour {
 
     // private variables
     // WOO BUTTONS
-    private KeyCode pickupTriggerL = KeyCode.Mouse0; // pickup button LEFT ARM
-    private KeyCode pickupTriggerR = KeyCode.Mouse1; // pickup button RIGHT ARM
+    private string pickupTriggerL = "Leftarm_P1"; // pickup button LEFT ARM
+    private string pickupTriggerR = "Rightarm_P1"; // pickup button RIGHT ARM
     
     // pickup state related
     private bool canPickUpL = false;
@@ -30,16 +30,17 @@ public class PlayerPickupManager : MonoBehaviour {
     void FixedUpdate() {
 
         // on pickup on pickUpTrigger activating button
-        if (Input.GetKeyDown(pickupTriggerL))
+        if (Input.GetButton(pickupTriggerL))
             canPickUpL = true;
-        if (canPickUpL && Input.GetKeyUp(pickupTriggerL))
+        else
             canPickUpL = false;
 
-        if (Input.GetKeyDown(pickupTriggerR))
+        if (Input.GetButton(pickupTriggerR))
             canPickUpR = true;
-		if (canPickUpR && Input.GetKeyUp (pickupTriggerR))
-			canPickUpR = false;
-		}
+        else
+            canPickUpR = false;
+
+    }
 
     // check on collision with another collider
     /*** must be trigger enabled ***/

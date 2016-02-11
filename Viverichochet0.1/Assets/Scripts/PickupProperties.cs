@@ -32,6 +32,7 @@ public abstract class PickupProperties : MonoBehaviour {
 
     public float durability() {
         return durability_value;
+
     }
     /////////////////////////////
 
