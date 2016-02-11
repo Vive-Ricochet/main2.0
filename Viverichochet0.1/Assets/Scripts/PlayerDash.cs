@@ -60,6 +60,7 @@ public class PlayerDash : MonoBehaviour {
                 dashDir = camDir;
                 myStats.setCharging(false);
                 myStats.setDashing(true);
+
                 IsDashing = true;
                 animate.SetBool("IsDashing", IsDashing);
             }
@@ -88,7 +89,7 @@ public class PlayerDash : MonoBehaviour {
                 dashRecovery = 0;
                 IsDashing = false;
                 animate.SetBool("IsDashing", IsDashing);
-                IsCharging = Input.GetAxis(DashButton);
+				IsCharging = 0.0f;
                 animate.SetFloat("IsCharging", IsCharging);
             }
         }
@@ -122,6 +123,10 @@ public class PlayerDash : MonoBehaviour {
 		
     public void ResetDash() {
         dashRecovery = 0;
+		IsDashing = false;
+		IsCharging = 0.0f;
+		animate.SetFloat ("IsCharging", IsCharging);
+		animate.SetBool ("IsDashing", IsDashing);
     }
 
 }

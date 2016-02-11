@@ -47,9 +47,17 @@ public class PlayerNodesManager : MonoBehaviour {
         leftArmPosition  = "North";
         rightArmPosition = "North";
 
+		float old_ly = leftArmNode.getTransform().localPosition.y;
+		leftArmNode.getTransform().localPosition = new Vector3(-0.3f, old_ly, 1.0f);
+
+		float old_ry = rightArmNode.getTransform().localPosition.y;
+		rightArmNode.getTransform().localPosition = new Vector3(0.3f, old_ry, 1.0f);
 
         animate = GetComponent<Animator>();
 		itemManager = GetComponent<PlayerItemManager> ();
+
+		animate.SetBool("LF", LF);
+		animate.SetBool("RF", RF);
 
         // NOTE: 
         //      "Node Position" is really only the coordinates of game objects called
@@ -123,8 +131,9 @@ public class PlayerNodesManager : MonoBehaviour {
 		otherObject.transform.GetComponentInParent<PickupNode>().updateItems (otherObject);
 		if (otherObject.transform.GetComponentInParent<PickupNode>() != null) {
 			print(otherObject.transform.GetComponentInParent<PickupNode>().getNodeAtk());
-			print (otherObject.transform.GetComponentInParent<PickupNode> ().getNodeProps ());
-
+			foreach (var elemen in pickupProperties) {
+				print (elemen);
+			}
         }
     }
 
@@ -132,32 +141,32 @@ public class PlayerNodesManager : MonoBehaviour {
     /****** MOVING PLAYER'S ARMS AND SHIT *******/
     // To move arms around the player
     void moveLeftArmN() {
-        float old_y = leftArmNode.getTransform().localPosition.y;
+        float old_ly = leftArmNode.getTransform().localPosition.y;
         leftArmPosition = leftArmPosition.Replace("East", "North")
                                          .Replace("South", "North")
                                          .Replace("West", "North");
-        leftArmNode.getTransform().localPosition = new Vector3(-0.3f, old_y, 1.0f);
+        leftArmNode.getTransform().localPosition = new Vector3(-0.3f, old_ly, 1.0f);
         LF = true;
         LS = false;
         animate.SetBool("LF", LF);
         animate.SetBool("LS", LS);
     }
 
-    void moveLeftArmE() {
-        float old_y = leftArmNode.getTransform().localPosition.y;
-        leftArmPosition = leftArmPosition.Replace("North", "East")
-                                         .Replace("South", "East")
-                                         .Replace("West", "East");
-        leftArmNode.getTransform().localPosition = new Vector3(1.0f, old_y, 0.3f);
-    }
+//    void moveLeftArmE() {
+//  //      float old_y = leftArmNode.getTransform().localPosition.y;
+//        leftArmPosition = leftArmPosition.Replace("North", "East")
+//                                         .Replace("South", "East")
+//                                         .Replace("West", "East");
+//        leftArmNode.getTransform().localPosition = new Vector3(1.0f, old_y, 0.3f);
+//    }
 
-    void moveLeftArmS() {
-        float old_y = leftArmNode.getTransform().localPosition.y;
-        leftArmPosition = leftArmPosition.Replace("East", "South")
-                                         .Replace("North", "South")
-                                         .Replace("West", "South");
-        leftArmNode.getTransform().localPosition = new Vector3(-0.3f, old_y, -1.0f);
-    }
+//    void moveLeftArmS() {
+////        float old_y = leftArmNode.getTransform().localPosition.y;
+//        leftArmPosition = leftArmPosition.Replace("East", "South")
+//                                         .Replace("North", "South")
+//                                         .Replace("West", "South");
+//        leftArmNode.getTransform().localPosition = new Vector3(-0.3f, old_y, -1.0f);
+//    }
 
     void moveLeftArmW() {
         float old_y = leftArmNode.getTransform().localPosition.y;
@@ -172,11 +181,11 @@ public class PlayerNodesManager : MonoBehaviour {
     }
 
     void moveRightArmN() {
-        float old_y = rightArmNode.getTransform().localPosition.y;
+        float old_ry = rightArmNode.getTransform().localPosition.y;
         rightArmPosition = rightArmPosition.Replace("East", "North")
                                            .Replace("South", "North")
                                            .Replace("West", "North");
-        rightArmNode.getTransform().localPosition = new Vector3(0.3f, old_y, 1.0f);
+        rightArmNode.getTransform().localPosition = new Vector3(0.3f, old_ry, 1.0f);
         RF = true;
         RS = false;
         animate.SetBool("RF", RF);
@@ -184,32 +193,32 @@ public class PlayerNodesManager : MonoBehaviour {
     }
 
     void moveRightArmE() {
-        float old_y = rightArmNode.getTransform().localPosition.y;
+        float old_ry = rightArmNode.getTransform().localPosition.y;
         rightArmPosition = rightArmPosition.Replace("North", "East")
                                            .Replace("South", "East")
                                            .Replace("West", "East");
-        rightArmNode.getTransform().localPosition = new Vector3(1.0f, old_y, -0.3f);
+        rightArmNode.getTransform().localPosition = new Vector3(1.0f, old_ry, -0.3f);
         RS = true;
         RF = false;
         animate.SetBool("RF", RF);
         animate.SetBool("RS", RS);
     }
 
-    void moveRightArmS() {
-        float old_y = rightArmNode.getTransform().localPosition.y;
-        rightArmPosition = rightArmPosition.Replace("East", "South")
-                                           .Replace("North", "South")
-                                           .Replace("West", "South");
-        rightArmNode.getTransform().localPosition = new Vector3(0.3f, old_y, -1.0f);
-    }
-
-    void moveRightArmW() {
-        float old_y = rightArmNode.getTransform().localPosition.y;
-        rightArmPosition = rightArmPosition.Replace("East", "West")
-                                           .Replace("South", "West")
-                                           .Replace("North", "West");
-        rightArmNode.getTransform().localPosition = new Vector3(-1.0f, old_y, 0.3f);
-    }
+//    void moveRightArmS() {
+//        float old_y = rightArmNode.getTransform().localPosition.y;
+//        rightArmPosition = rightArmPosition.Replace("East", "South")
+//                                           .Replace("North", "South")
+//                                           .Replace("West", "South");
+//        rightArmNode.getTransform().localPosition = new Vector3(0.3f, old_y, -1.0f);
+//    }
+//
+//    void moveRightArmW() {
+//        float old_y = rightArmNode.getTransform().localPosition.y;
+//        rightArmPosition = rightArmPosition.Replace("East", "West")
+//                                           .Replace("South", "West")
+//                                           .Replace("North", "West");
+//        rightArmNode.getTransform().localPosition = new Vector3(-1.0f, old_y, 0.3f);
+//    }
 
     // To move arms "up" and "down"
     /*void TogglePlayerLeftArm() {
