@@ -9,13 +9,8 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField] private float rotationSpeed = 100; // player rotation speed
 	[SerializeField] private Camera PlayerCamera;
 
-	public string Horizontal;
-	public string Vertical;
-    Animator animator;
-    //public string CameraName = "P1Cam"
-    //public string Jump = "Jump_P1";
-
     // private fields
+    PlayerAccesor myStats;
     private bool grounded;
     private Rigidbody rb;
 
@@ -23,23 +18,38 @@ public class PlayerMovement : MonoBehaviour {
     private bool canDash = false;//to be used with stamina
 	private bool charging;
 
-    float isMoving = 0.0f;
+    // public fields
+    Animator animator;
+    public string Horizontal;
+    public string Vertical;
+
+    float isMovingH = 0.0f;
+    float isMovingV = 0.0f;
 
     void Start() {
+
+        // initialize my accessor
+        myStats = GetComponent<PlayerAccesor>();
+        myStats.setDashing(false);
+        myStats.setCharging(false);
 
         // rigid body used for in-engine physics 
         rb = GetComponent<Rigidbody>();
         dashing = false;
 		charging = false;
         animator = GetComponent<Animator>();
+
+
 		
         // gravity is intended to be used for this object
         rb.useGravity = true;
-        Physics.gravity = new Vector3(0f, -10.0f, 0f);
+        Physics.gravity = new Vector3(0f, -30.0f, 0f);
 
     }
 
     void FixedUpdate() {
+
+        //print(dashing);
 
         // get normalized camera forward direction. Ignor Y transformation
 		Vector3 camDir = PlayerCamera.transform.forward;
@@ -54,20 +64,20 @@ public class PlayerMovement : MonoBehaviour {
 
         // calculate movement transformations
         // (apply only if not dashing currently)
-        if (dashing==false && charging == false) {
+        //if (dashing==false && charging == false) {
+        if ( myStats.isDashing() == false && myStats.isCharging() == false) {
+
 
             // Get movement inputs
-            isMoving = System.Math.Abs(Input.GetAxis(Horizontal));
+            isMovingH = System.Math.Abs(Input.GetAxis(Horizontal));
+            isMovingV = System.Math.Abs(Input.GetAxis(Vertical));
+
             newVel += Input.GetAxis(Horizontal) * camRight * speed;
 			newVel += Input.GetAxis(Vertical) * camDir * speed;
 
-            animator.SetFloat("IsMoving", isMoving);
-
-            // check input for "Jump" and execute if grounded
-//            if ((Input.GetAxis(Jump) == 1) && grounded) {
-                // shoot velocity upwards. 
-  //              rb.velocity = new Vector3(0.0f, Input.GetAxis(Jump) * jump, 0.0f);
-    //        }
+            if (isMovingH > 0) animator.SetFloat("IsMoving", isMovingH);
+            if (isMovingV > 0) animator.SetFloat("IsMoving", isMovingV);
+            if (isMovingH == 0 && isMovingV == 0) animator.SetFloat("IsMoving", isMovingH);
 
             // apply new velocity
             transform.position += (newVel * Time.fixedDeltaTime);
@@ -122,6 +132,9 @@ public class PlayerMovement : MonoBehaviour {
     public float getRotationSpeed() {
         return rotationSpeed;
     }
-	
+
+    public Camera getPlayerCamera() {
+        return PlayerCamera;
+    }
 	
 }

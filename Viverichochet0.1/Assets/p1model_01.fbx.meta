@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 4097e26cdc9d92248acb78b6a3debcd5
-timeCreated: 1455083080
+guid: eed4a897d8858ff4cb36dce5d72aa93a
+timeCreated: 1455157303
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -230,15 +230,15 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Cube
-        weight: 0
+        weight: 1
       - path: rig
         weight: 1
       - path: rig/Armature
         weight: 1
       - path: rig/Armature/pelvis
-        weight: 0
+        weight: 1
       - path: rig/Armature/pelvis/pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach
         weight: 1
       - path: rig/Armature/stomach/ribs
@@ -252,18 +252,18 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2/finger
           1.2_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1/finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002
@@ -272,19 +272,19 @@ ModelImporter:
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001/finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1/finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck
@@ -292,7 +292,7 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head/head_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/thigh 1
         weight: 1
       - path: rig/Armature/thigh 1/knee 1
@@ -319,97 +319,97 @@ ModelImporter:
           1.002_end
         weight: 1
       - path: rig/root
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis/ORG-pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2/ORG-finger 1.2_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1/ORG-finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001/ORG-finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1/ORG-finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head/ORG-head_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1/ORG-foot 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002/ORG-foot 1.002_end
-        weight: 0
+        weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -425,218 +425,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 1
-      loopBlendPositionXZ: 1
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 0
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Cube
-        weight: 0
-      - path: rig
-        weight: 1
-      - path: rig/Armature
-        weight: 1
-      - path: rig/Armature/pelvis
-        weight: 0
-      - path: rig/Armature/pelvis/pelvis_end
-        weight: 0
-      - path: rig/Armature/stomach
-        weight: 1
-      - path: rig/Armature/stomach/ribs
-        weight: 1
-      - path: rig/Armature/stomach/ribs/chest
-        weight: 1
-      - path: rig/Armature/stomach/ribs/chest/collar 1
-        weight: 1
-      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1
-        weight: 1
-      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1
-        weight: 1
-      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2
-        weight: 0
-      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2/finger
-          1.2_end
-        weight: 0
-      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1
-        weight: 1
-      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
-          1.1
-        weight: 0
-      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
-          1.1/finger 1.1_end
-        weight: 0
-      - path: rig/Armature/stomach/ribs/chest/collar 1.003
-        weight: 1
-      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002
-        weight: 1
-      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002
-        weight: 1
-      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
-          1.001
-        weight: 0
-      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
-          1.001/finger 1.001_end
-        weight: 0
-      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
-          1
-        weight: 1
-      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
-          1/finger 1
-        weight: 0
-      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
-          1/finger 1/finger 1_end
-        weight: 0
-      - path: rig/Armature/stomach/ribs/chest/lower neck
-        weight: 1
-      - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck
-        weight: 1
-      - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head
-        weight: 1
-      - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head/head_end
-        weight: 0
-      - path: rig/Armature/thigh 1
-        weight: 1
-      - path: rig/Armature/thigh 1/knee 1
-        weight: 1
-      - path: rig/Armature/thigh 1/knee 1/thigh 1.001
-        weight: 1
-      - path: rig/Armature/thigh 1/knee 1/thigh 1.001/heel 1
-        weight: 1
-      - path: rig/Armature/thigh 1/knee 1/thigh 1.001/heel 1/foot 1
-        weight: 1
-      - path: rig/Armature/thigh 1/knee 1/thigh 1.001/heel 1/foot 1/foot 1_end
-        weight: 1
-      - path: rig/Armature/thigh 1.004
-        weight: 1
-      - path: rig/Armature/thigh 1.004/knee 1.002
-        weight: 1
-      - path: rig/Armature/thigh 1.004/knee 1.002/thigh 1.002
-        weight: 1
-      - path: rig/Armature/thigh 1.004/knee 1.002/thigh 1.002/heel 1.002
-        weight: 1
-      - path: rig/Armature/thigh 1.004/knee 1.002/thigh 1.002/heel 1.002/foot 1.002
-        weight: 1
-      - path: rig/Armature/thigh 1.004/knee 1.002/thigh 1.002/heel 1.002/foot 1.002/foot
-          1.002_end
-        weight: 1
-      - path: rig/root
-        weight: 0
-      - path: rig/root/ORG-pelvis
-        weight: 0
-      - path: rig/root/ORG-pelvis/ORG-pelvis_end
-        weight: 0
-      - path: rig/root/ORG-stomach
-        weight: 0
-      - path: rig/root/ORG-stomach/ORG-ribs
-        weight: 0
-      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest
-        weight: 0
-      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1
-        weight: 0
-      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1
-        weight: 0
-      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
-          1
-        weight: 0
-      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
-          1/ORG-finger 1.2
-        weight: 0
-      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
-          1/ORG-finger 1.2/ORG-finger 1.2_end
-        weight: 0
-      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
-          1/ORG-hand 1.1
-        weight: 0
-      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
-          1/ORG-hand 1.1/ORG-finger 1.1
-        weight: 0
-      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
-          1/ORG-hand 1.1/ORG-finger 1.1/ORG-finger 1.1_end
-        weight: 0
-      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003
-        weight: 0
-      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002
-        weight: 0
-      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
-          1.002
-        weight: 0
-      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
-          1.002/ORG-finger 1.001
-        weight: 0
-      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
-          1.002/ORG-finger 1.001/ORG-finger 1.001_end
-        weight: 0
-      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
-          1.002/ORG-hand 1
-        weight: 0
-      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
-          1.002/ORG-hand 1/ORG-finger 1
-        weight: 0
-      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
-          1.002/ORG-hand 1/ORG-finger 1/ORG-finger 1_end
-        weight: 0
-      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck
-        weight: 0
-      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck
-        weight: 0
-      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head
-        weight: 0
-      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head/ORG-head_end
-        weight: 0
-      - path: rig/root/ORG-thigh 1
-        weight: 0
-      - path: rig/root/ORG-thigh 1/ORG-knee 1
-        weight: 0
-      - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001
-        weight: 0
-      - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1
-        weight: 0
-      - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
-          1
-        weight: 0
-      - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
-          1/ORG-foot 1_end
-        weight: 0
-      - path: rig/root/ORG-thigh 1.004
-        weight: 0
-      - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002
-        weight: 0
-      - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002
-        weight: 0
-      - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002
-        weight: 0
-      - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
-          1.002
-        weight: 0
-      - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
-          1.002/ORG-foot 1.002_end
-        weight: 0
-      maskType: 0
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: Armature|Dash
-      takeName: Armature|Dash
-      firstFrame: 0
-      lastFrame: 1
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -652,15 +441,15 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Cube
-        weight: 0
+        weight: 1
       - path: rig
         weight: 1
       - path: rig/Armature
         weight: 1
       - path: rig/Armature/pelvis
-        weight: 0
+        weight: 1
       - path: rig/Armature/pelvis/pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach
         weight: 1
       - path: rig/Armature/stomach/ribs
@@ -674,18 +463,18 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2/finger
           1.2_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1/finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002
@@ -694,19 +483,19 @@ ModelImporter:
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001/finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1/finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck
@@ -714,7 +503,7 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head/head_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/thigh 1
         weight: 1
       - path: rig/Armature/thigh 1/knee 1
@@ -741,104 +530,315 @@ ModelImporter:
           1.002_end
         weight: 1
       - path: rig/root
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis/ORG-pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2/ORG-finger 1.2_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1/ORG-finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001/ORG-finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1/ORG-finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head/ORG-head_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1/ORG-foot 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002/ORG-foot 1.002_end
-        weight: 0
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Dash
+      takeName: Armature|Dash
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: rig
+        weight: 1
+      - path: rig/Armature
+        weight: 1
+      - path: rig/Armature/pelvis
+        weight: 1
+      - path: rig/Armature/pelvis/pelvis_end
+        weight: 1
+      - path: rig/Armature/stomach
+        weight: 1
+      - path: rig/Armature/stomach/ribs
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2/finger
+          1.2_end
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
+          1.1
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
+          1.1/finger 1.1_end
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
+          1.001
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
+          1.001/finger 1.001_end
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
+          1
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
+          1/finger 1
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
+          1/finger 1/finger 1_end
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/lower neck
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head
+        weight: 1
+      - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head/head_end
+        weight: 1
+      - path: rig/Armature/thigh 1
+        weight: 1
+      - path: rig/Armature/thigh 1/knee 1
+        weight: 1
+      - path: rig/Armature/thigh 1/knee 1/thigh 1.001
+        weight: 1
+      - path: rig/Armature/thigh 1/knee 1/thigh 1.001/heel 1
+        weight: 1
+      - path: rig/Armature/thigh 1/knee 1/thigh 1.001/heel 1/foot 1
+        weight: 1
+      - path: rig/Armature/thigh 1/knee 1/thigh 1.001/heel 1/foot 1/foot 1_end
+        weight: 1
+      - path: rig/Armature/thigh 1.004
+        weight: 1
+      - path: rig/Armature/thigh 1.004/knee 1.002
+        weight: 1
+      - path: rig/Armature/thigh 1.004/knee 1.002/thigh 1.002
+        weight: 1
+      - path: rig/Armature/thigh 1.004/knee 1.002/thigh 1.002/heel 1.002
+        weight: 1
+      - path: rig/Armature/thigh 1.004/knee 1.002/thigh 1.002/heel 1.002/foot 1.002
+        weight: 1
+      - path: rig/Armature/thigh 1.004/knee 1.002/thigh 1.002/heel 1.002/foot 1.002/foot
+          1.002_end
+        weight: 1
+      - path: rig/root
+        weight: 1
+      - path: rig/root/ORG-pelvis
+        weight: 1
+      - path: rig/root/ORG-pelvis/ORG-pelvis_end
+        weight: 1
+      - path: rig/root/ORG-stomach
+        weight: 1
+      - path: rig/root/ORG-stomach/ORG-ribs
+        weight: 1
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest
+        weight: 1
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1
+        weight: 1
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1
+        weight: 1
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
+          1
+        weight: 1
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
+          1/ORG-finger 1.2
+        weight: 1
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
+          1/ORG-finger 1.2/ORG-finger 1.2_end
+        weight: 1
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
+          1/ORG-hand 1.1
+        weight: 1
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
+          1/ORG-hand 1.1/ORG-finger 1.1
+        weight: 1
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
+          1/ORG-hand 1.1/ORG-finger 1.1/ORG-finger 1.1_end
+        weight: 1
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003
+        weight: 1
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002
+        weight: 1
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
+          1.002
+        weight: 1
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
+          1.002/ORG-finger 1.001
+        weight: 1
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
+          1.002/ORG-finger 1.001/ORG-finger 1.001_end
+        weight: 1
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
+          1.002/ORG-hand 1
+        weight: 1
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
+          1.002/ORG-hand 1/ORG-finger 1
+        weight: 1
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
+          1.002/ORG-hand 1/ORG-finger 1/ORG-finger 1_end
+        weight: 1
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck
+        weight: 1
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck
+        weight: 1
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head
+        weight: 1
+      - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head/ORG-head_end
+        weight: 1
+      - path: rig/root/ORG-thigh 1
+        weight: 1
+      - path: rig/root/ORG-thigh 1/ORG-knee 1
+        weight: 1
+      - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001
+        weight: 1
+      - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1
+        weight: 1
+      - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
+          1
+        weight: 1
+      - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
+          1/ORG-foot 1_end
+        weight: 1
+      - path: rig/root/ORG-thigh 1.004
+        weight: 1
+      - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002
+        weight: 1
+      - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002
+        weight: 1
+      - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002
+        weight: 1
+      - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
+          1.002
+        weight: 1
+      - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
+          1.002/ORG-foot 1.002_end
+        weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Armature|Pose-LF-LF-Standing
       takeName: Armature|Pose-LF-LF-Standing
-      firstFrame: 21.8
+      firstFrame: 22
       lastFrame: 23
       wrapMode: 0
       orientationOffsetY: 0
@@ -863,15 +863,15 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Cube
-        weight: 0
+        weight: 1
       - path: rig
         weight: 1
       - path: rig/Armature
         weight: 1
       - path: rig/Armature/pelvis
-        weight: 0
+        weight: 1
       - path: rig/Armature/pelvis/pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach
         weight: 1
       - path: rig/Armature/stomach/ribs
@@ -885,18 +885,18 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2/finger
           1.2_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1/finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002
@@ -905,19 +905,19 @@ ModelImporter:
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001/finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1/finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck
@@ -925,7 +925,7 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head/head_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/thigh 1
         weight: 1
       - path: rig/Armature/thigh 1/knee 1
@@ -952,97 +952,97 @@ ModelImporter:
           1.002_end
         weight: 1
       - path: rig/root
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis/ORG-pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2/ORG-finger 1.2_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1/ORG-finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001/ORG-finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1/ORG-finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head/ORG-head_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1/ORG-foot 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002/ORG-foot 1.002_end
-        weight: 0
+        weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -1074,15 +1074,15 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Cube
-        weight: 0
+        weight: 1
       - path: rig
         weight: 1
       - path: rig/Armature
         weight: 1
       - path: rig/Armature/pelvis
-        weight: 0
+        weight: 1
       - path: rig/Armature/pelvis/pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach
         weight: 1
       - path: rig/Armature/stomach/ribs
@@ -1096,18 +1096,18 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2/finger
           1.2_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1/finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002
@@ -1116,19 +1116,19 @@ ModelImporter:
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001/finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1/finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck
@@ -1136,7 +1136,7 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head/head_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/thigh 1
         weight: 1
       - path: rig/Armature/thigh 1/knee 1
@@ -1163,104 +1163,104 @@ ModelImporter:
           1.002_end
         weight: 1
       - path: rig/root
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis/ORG-pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2/ORG-finger 1.2_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1/ORG-finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001/ORG-finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1/ORG-finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head/ORG-head_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1/ORG-foot 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002/ORG-foot 1.002_end
-        weight: 0
+        weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Armature|Pose-LS-RF-Standing
       takeName: Armature|Pose-LS-RF-Standing
-      firstFrame: 20.6
+      firstFrame: 22.2
       lastFrame: 23
       wrapMode: 0
       orientationOffsetY: 0
@@ -1285,15 +1285,15 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Cube
-        weight: 0
+        weight: 1
       - path: rig
         weight: 1
       - path: rig/Armature
         weight: 1
       - path: rig/Armature/pelvis
-        weight: 0
+        weight: 1
       - path: rig/Armature/pelvis/pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach
         weight: 1
       - path: rig/Armature/stomach/ribs
@@ -1307,18 +1307,18 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2/finger
           1.2_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1/finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002
@@ -1327,19 +1327,19 @@ ModelImporter:
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001/finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1/finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck
@@ -1347,7 +1347,7 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head/head_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/thigh 1
         weight: 1
       - path: rig/Armature/thigh 1/knee 1
@@ -1374,104 +1374,104 @@ ModelImporter:
           1.002_end
         weight: 1
       - path: rig/root
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis/ORG-pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2/ORG-finger 1.2_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1/ORG-finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001/ORG-finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1/ORG-finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head/ORG-head_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1/ORG-foot 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002/ORG-foot 1.002_end
-        weight: 0
+        weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Armature|Pose-LS-RS-Standing
       takeName: Armature|Pose-LS-RS-Standing
-      firstFrame: 21.2
+      firstFrame: 22
       lastFrame: 23
       wrapMode: 0
       orientationOffsetY: 0
@@ -1496,15 +1496,15 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Cube
-        weight: 0
+        weight: 1
       - path: rig
         weight: 1
       - path: rig/Armature
         weight: 1
       - path: rig/Armature/pelvis
-        weight: 0
+        weight: 1
       - path: rig/Armature/pelvis/pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach
         weight: 1
       - path: rig/Armature/stomach/ribs
@@ -1518,18 +1518,18 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2/finger
           1.2_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1/finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002
@@ -1538,19 +1538,19 @@ ModelImporter:
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001/finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1/finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck
@@ -1558,7 +1558,7 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head/head_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/thigh 1
         weight: 1
       - path: rig/Armature/thigh 1/knee 1
@@ -1585,97 +1585,97 @@ ModelImporter:
           1.002_end
         weight: 1
       - path: rig/root
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis/ORG-pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2/ORG-finger 1.2_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1/ORG-finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001/ORG-finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1/ORG-finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head/ORG-head_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1/ORG-foot 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002/ORG-foot 1.002_end
-        weight: 0
+        weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -1707,15 +1707,15 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Cube
-        weight: 0
+        weight: 1
       - path: rig
         weight: 1
       - path: rig/Armature
         weight: 1
       - path: rig/Armature/pelvis
-        weight: 0
+        weight: 1
       - path: rig/Armature/pelvis/pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach
         weight: 1
       - path: rig/Armature/stomach/ribs
@@ -1729,18 +1729,18 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2/finger
           1.2_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1/finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002
@@ -1749,19 +1749,19 @@ ModelImporter:
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001/finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1/finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck
@@ -1769,7 +1769,7 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head/head_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/thigh 1
         weight: 1
       - path: rig/Armature/thigh 1/knee 1
@@ -1796,97 +1796,97 @@ ModelImporter:
           1.002_end
         weight: 1
       - path: rig/root
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis/ORG-pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2/ORG-finger 1.2_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1/ORG-finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001/ORG-finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1/ORG-finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head/ORG-head_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1/ORG-foot 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002/ORG-foot 1.002_end
-        weight: 0
+        weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -1918,15 +1918,15 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Cube
-        weight: 0
+        weight: 1
       - path: rig
         weight: 1
       - path: rig/Armature
         weight: 1
       - path: rig/Armature/pelvis
-        weight: 0
+        weight: 1
       - path: rig/Armature/pelvis/pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach
         weight: 1
       - path: rig/Armature/stomach/ribs
@@ -1940,18 +1940,18 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2/finger
           1.2_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1/finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002
@@ -1960,19 +1960,19 @@ ModelImporter:
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001/finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1/finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck
@@ -1980,7 +1980,7 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head/head_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/thigh 1
         weight: 1
       - path: rig/Armature/thigh 1/knee 1
@@ -2007,97 +2007,97 @@ ModelImporter:
           1.002_end
         weight: 1
       - path: rig/root
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis/ORG-pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2/ORG-finger 1.2_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1/ORG-finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001/ORG-finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1/ORG-finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head/ORG-head_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1/ORG-foot 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002/ORG-foot 1.002_end
-        weight: 0
+        weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -2129,15 +2129,15 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Cube
-        weight: 0
+        weight: 1
       - path: rig
         weight: 1
       - path: rig/Armature
         weight: 1
       - path: rig/Armature/pelvis
-        weight: 0
+        weight: 1
       - path: rig/Armature/pelvis/pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach
         weight: 1
       - path: rig/Armature/stomach/ribs
@@ -2151,18 +2151,18 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2/finger
           1.2_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1/finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002
@@ -2171,19 +2171,19 @@ ModelImporter:
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001/finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1/finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck
@@ -2191,7 +2191,7 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head/head_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/thigh 1
         weight: 1
       - path: rig/Armature/thigh 1/knee 1
@@ -2218,97 +2218,97 @@ ModelImporter:
           1.002_end
         weight: 1
       - path: rig/root
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis/ORG-pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2/ORG-finger 1.2_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1/ORG-finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001/ORG-finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1/ORG-finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head/ORG-head_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1/ORG-foot 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002/ORG-foot 1.002_end
-        weight: 0
+        weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -2340,15 +2340,15 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Cube
-        weight: 0
+        weight: 1
       - path: rig
         weight: 1
       - path: rig/Armature
         weight: 1
       - path: rig/Armature/pelvis
-        weight: 0
+        weight: 1
       - path: rig/Armature/pelvis/pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach
         weight: 1
       - path: rig/Armature/stomach/ribs
@@ -2362,18 +2362,18 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2/finger
           1.2_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1/finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002
@@ -2382,19 +2382,19 @@ ModelImporter:
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001/finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1/finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck
@@ -2402,7 +2402,7 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head/head_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/thigh 1
         weight: 1
       - path: rig/Armature/thigh 1/knee 1
@@ -2429,97 +2429,97 @@ ModelImporter:
           1.002_end
         weight: 1
       - path: rig/root
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis/ORG-pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2/ORG-finger 1.2_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1/ORG-finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001/ORG-finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1/ORG-finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head/ORG-head_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1/ORG-foot 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002/ORG-foot 1.002_end
-        weight: 0
+        weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -2551,15 +2551,15 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Cube
-        weight: 0
+        weight: 1
       - path: rig
         weight: 1
       - path: rig/Armature
         weight: 1
       - path: rig/Armature/pelvis
-        weight: 0
+        weight: 1
       - path: rig/Armature/pelvis/pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach
         weight: 1
       - path: rig/Armature/stomach/ribs
@@ -2573,18 +2573,18 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2/finger
           1.2_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1/finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002
@@ -2593,19 +2593,19 @@ ModelImporter:
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001/finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1/finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck
@@ -2613,7 +2613,7 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head/head_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/thigh 1
         weight: 1
       - path: rig/Armature/thigh 1/knee 1
@@ -2640,97 +2640,97 @@ ModelImporter:
           1.002_end
         weight: 1
       - path: rig/root
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis/ORG-pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2/ORG-finger 1.2_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1/ORG-finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001/ORG-finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1/ORG-finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head/ORG-head_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1/ORG-foot 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002/ORG-foot 1.002_end
-        weight: 0
+        weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -2746,7 +2746,7 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 0
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -2762,15 +2762,15 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Cube
-        weight: 0
+        weight: 1
       - path: rig
         weight: 1
       - path: rig/Armature
         weight: 1
       - path: rig/Armature/pelvis
-        weight: 0
+        weight: 1
       - path: rig/Armature/pelvis/pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach
         weight: 1
       - path: rig/Armature/stomach/ribs
@@ -2784,18 +2784,18 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/finger 1.2/finger
           1.2_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1/bicep 1/tricep 1/hand 1.1/finger
           1.1/finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002
@@ -2804,19 +2804,19 @@ ModelImporter:
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/finger
           1.001/finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/collar 1.003/bicep 1.002/tricep 1.002/hand
           1/finger 1/finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck
@@ -2824,7 +2824,7 @@ ModelImporter:
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head
         weight: 1
       - path: rig/Armature/stomach/ribs/chest/lower neck/upper neck/head/head_end
-        weight: 0
+        weight: 1
       - path: rig/Armature/thigh 1
         weight: 1
       - path: rig/Armature/thigh 1/knee 1
@@ -2851,97 +2851,97 @@ ModelImporter:
           1.002_end
         weight: 1
       - path: rig/root
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-pelvis/ORG-pelvis_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-finger 1.2/ORG-finger 1.2_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1/ORG-bicep 1/ORG-tricep
           1/ORG-hand 1.1/ORG-finger 1.1/ORG-finger 1.1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-finger 1.001/ORG-finger 1.001_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-collar 1.003/ORG-bicep 1.002/ORG-tricep
           1.002/ORG-hand 1/ORG-finger 1/ORG-finger 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-stomach/ORG-ribs/ORG-chest/ORG-lower neck/ORG-upper neck/ORG-head/ORG-head_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1/ORG-knee 1/ORG-thigh 1.001/ORG-heel 1/ORG-foot
           1/ORG-foot 1_end
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002
-        weight: 0
+        weight: 1
       - path: rig/root/ORG-thigh 1.004/ORG-knee 1.002/ORG-thigh 1.002/ORG-heel 1.002/ORG-foot
           1.002/ORG-foot 1.002_end
-        weight: 0
+        weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -3156,9 +3156,19 @@ ModelImporter:
       scale: {x: 28.450567, y: 28.45057, z: 28.45057}
       transformModified: 1
     - name: Armature
-      position: {x: 0.000067317334, y: 0.0075394185, z: 0.060191214}
+      position: {x: 0.000067317334, y: 0.0075394167, z: 0.06781767}
       rotation: {x: 0.70796454, y: -1.5719973e-16, z: 3.3397004e-23, w: 0.706248}
       scale: {x: 1.2519907, y: 1.2519907, z: 1.2519907}
+      transformModified: 1
+    - name: pelvis
+      position: {x: 9.3074964e-20, y: 0.0000010150768, z: 0.010418156}
+      rotation: {x: 0.9999452, y: -0.000000013886346, z: 0.00000013759606, w: 0.010470592}
+      scale: {x: 1, y: 0.9999996, z: 0.9992849}
+      transformModified: 1
+    - name: pelvis_end
+      position: {x: -0, y: 0.0056468314, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
       transformModified: 1
     - name: stomach
       position: {x: 9.3074964e-20, y: 0.0000010150768, z: 0.010418156}
@@ -3175,26 +3185,6 @@ ModelImporter:
       rotation: {x: 0.15574466, y: -1.7763568e-15, z: 1.731948e-14, w: 0.98779744}
       scale: {x: 1, y: 1.0000001, z: 1.0000001}
       transformModified: 1
-    - name: lower neck
-      position: {x: 3.3087224e-26, y: 0.0071462416, z: 7.4505804e-11}
-      rotation: {x: -0.020079484, y: -3.608225e-15, z: -1.204592e-14, w: 0.9997984}
-      scale: {x: 1, y: 0.9999998, z: 0.9999998}
-      transformModified: 1
-    - name: upper neck
-      position: {x: -6.617445e-26, y: 0.001675896, z: 1.4901161e-10}
-      rotation: {x: 0.0071408576, y: -0.014319519, z: 0.0020473727, w: 0.9998699}
-      scale: {x: 0.9999999, y: 0.9999998, z: 0.9999998}
-      transformModified: 1
-    - name: head
-      position: {x: 7.566996e-12, y: 0.0013629736, z: -2.3866958e-10}
-      rotation: {x: -0.022038369, y: 0.787839, z: -0.03598337, w: 0.6144341}
-      scale: {x: 1.0000004, y: 1, z: 1}
-      transformModified: 1
-    - name: head_end
-      position: {x: -0, y: 0.014425571, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: collar 1
       position: {x: -0.0011301236, y: 0.00610845, z: 0.00008428633}
       rotation: {x: -0.12769689, y: 0.05727806, z: 0.8023365, w: 0.58023185}
@@ -3210,21 +3200,6 @@ ModelImporter:
       rotation: {x: -0.001466634, y: -0.0002952038, z: -0.012926648, w: 0.9999154}
       scale: {x: 0.9999999, y: 1.0000001, z: 0.9999997}
       transformModified: 1
-    - name: hand 1.1
-      position: {x: -7.4505804e-11, y: 0.012312131, z: -5.9604643e-10}
-      rotation: {x: 0.2586698, y: -0.040044818, z: -0.058035478, w: 0.9633889}
-      scale: {x: 0.99999994, y: 0.99999964, z: 0.99999994}
-      transformModified: 1
-    - name: finger 1.1
-      position: {x: -1.4901161e-10, y: 0.004810979, z: 0.000000006556511}
-      rotation: {x: -0.23229825, y: 0.066759035, z: 0.13698736, w: 0.9606327}
-      scale: {x: 1, y: 0.99999994, z: 1.0000004}
-      transformModified: 1
-    - name: finger 1.1_end
-      position: {x: -0, y: 0.0044499952, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-      transformModified: 1
     - name: finger 1.2
       position: {x: -0.000009530782, y: 0.017131383, z: -0.002122101}
       rotation: {x: 0.008136865, y: -0.9909575, z: -0.08303989, w: 0.10507796}
@@ -3232,6 +3207,21 @@ ModelImporter:
       transformModified: 1
     - name: finger 1.2_end
       position: {x: -0, y: 0.003451265, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: hand 1.1
+      position: {x: -7.4505804e-11, y: 0.012312131, z: -5.9604643e-10}
+      rotation: {x: 0.2586698, y: -0.040044818, z: -0.058035478, w: 0.9633889}
+      scale: {x: 0.99999994, y: 0.99999964, z: 0.99999994}
+      transformModified: 1
+    - name: finger 1.1
+      position: {x: -1.4901161e-10, y: 0.004810979, z: 0.000000006556511}
+      rotation: {x: -0.23229827, y: 0.06675904, z: 0.13698737, w: 0.96063274}
+      scale: {x: 1, y: 0.99999994, z: 1.0000004}
+      transformModified: 1
+    - name: finger 1.1_end
+      position: {x: -0, y: 0.0044499952, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
@@ -3250,9 +3240,19 @@ ModelImporter:
       rotation: {x: -0.0070360275, y: -0.23319522, z: -0.00070327515, w: 0.9724043}
       scale: {x: 1.0000001, y: 0.9999999, z: 1.0000002}
       transformModified: 1
+    - name: finger 1.001
+      position: {x: 0.0010479913, y: 0.017421633, z: 0.001274546}
+      rotation: {x: -0.0531722, y: 0.9107332, z: -0.054106385, w: 0.40596846}
+      scale: {x: 0.9999998, y: 0.99999994, z: 0.9999994}
+      transformModified: 1
+    - name: finger 1.001_end
+      position: {x: -0, y: 0.0035595968, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
     - name: hand 1
       position: {x: 2.9802322e-10, y: 0.011058876, z: -0.0000000011920929}
-      rotation: {x: -0.16134323, y: 0.34315687, z: -0.029794898, w: 0.92483723}
+      rotation: {x: -0.16134325, y: 0.3431569, z: -0.0297949, w: 0.9248373}
       scale: {x: 0.99999994, y: 1, z: 1.0000001}
       transformModified: 1
     - name: finger 1
@@ -3265,23 +3265,23 @@ ModelImporter:
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
-    - name: finger 1.001
-      position: {x: 0.0010479913, y: 0.017421633, z: 0.001274546}
-      rotation: {x: -0.0531722, y: 0.9107332, z: -0.054106385, w: 0.40596846}
-      scale: {x: 0.9999998, y: 0.99999994, z: 0.9999994}
+    - name: lower neck
+      position: {x: 3.3087224e-26, y: 0.0071462416, z: 7.4505804e-11}
+      rotation: {x: -0.020079484, y: -3.608225e-15, z: -1.204592e-14, w: 0.9997984}
+      scale: {x: 1, y: 0.9999998, z: 0.9999998}
       transformModified: 1
-    - name: finger 1.001_end
-      position: {x: -0, y: 0.0035595968, z: 0}
-      rotation: {x: 0, y: 0, z: 0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+    - name: upper neck
+      position: {x: -6.617445e-26, y: 0.001675896, z: 1.4901161e-10}
+      rotation: {x: 0.0071408576, y: -0.014319519, z: 0.0020473727, w: 0.9998699}
+      scale: {x: 0.9999999, y: 0.9999998, z: 0.9999998}
       transformModified: 1
-    - name: pelvis
-      position: {x: 9.3074964e-20, y: 0.0000010150768, z: 0.010418156}
-      rotation: {x: 0.9999452, y: -0.000000013886346, z: 0.00000013759606, w: 0.010470592}
-      scale: {x: 1, y: 0.9999996, z: 0.9992849}
+    - name: head
+      position: {x: 7.566996e-12, y: 0.0013629736, z: -2.3866958e-10}
+      rotation: {x: -0.022038369, y: 0.787839, z: -0.03598337, w: 0.6144341}
+      scale: {x: 1.0000004, y: 1, z: 1}
       transformModified: 1
-    - name: pelvis_end
-      position: {x: -0, y: 0.0056468314, z: 0}
+    - name: head_end
+      position: {x: -0, y: 0.014425571, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
       transformModified: 1
