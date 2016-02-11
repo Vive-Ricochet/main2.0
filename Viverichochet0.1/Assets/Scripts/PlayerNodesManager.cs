@@ -115,10 +115,12 @@ public class PlayerNodesManager : MonoBehaviour {
         otherObject.transform.position = this.transform.Find(nodeToAppendTo).position;
        
         // obtain pickup's properties
-        PickupProperties pickupProperties = otherObject.GetComponent<PickupProperties>();
-        if (pickupProperties != null) {
-			pickupProperties.PrintProperties();
-			print (pickupProperties.attackModifier ());
+		var pickupProperties = otherObject.GetComponent<PickupProperties>().GetProperties();
+		otherObject.transform.GetComponentInParent<PickupNode>().updateProps (pickupProperties);
+		otherObject.transform.GetComponentInParent<PickupNode>().updateItems (otherObject);
+		if (otherObject.transform.GetComponentInParent<PickupNode>() != null) {
+			print(otherObject.transform.GetComponentInParent<PickupNode>().getNodeAtk());
+			print (otherObject.transform.GetComponentInParent<PickupNode> ().getNodeProps ());
         }
     }
 

@@ -10,7 +10,6 @@ public class CollisionManager : MonoBehaviour {
     // Public fields
     private PlayerAccesor Player01;
     private PlayerAccesor Player02;
-
     // On scene load, do this
     void Start() {
 
@@ -19,7 +18,6 @@ public class CollisionManager : MonoBehaviour {
             Player01 = Player01_obj.GetComponent<PlayerAccesor>();
             Player02 = Player02_obj.GetComponent<PlayerAccesor>();
         }
-
     }
 
     // On every update, do this
