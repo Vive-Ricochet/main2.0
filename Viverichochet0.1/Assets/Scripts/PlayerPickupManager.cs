@@ -19,9 +19,11 @@ public class PlayerPickupManager : MonoBehaviour {
     // PickupStateProperties
     private PickupProperties pickupProperties;
 
+	private PlayerItemManager itemManager;
+
     // on load scene, do this
     void Start() {
-    
+		itemManager = GetComponent<PlayerItemManager>();
     }
 
 
@@ -35,10 +37,9 @@ public class PlayerPickupManager : MonoBehaviour {
 
         if (Input.GetKeyDown(pickupTriggerR))
             canPickUpR = true;
-        if (canPickUpR && Input.GetKeyUp(pickupTriggerR))
-            canPickUpR = false;
-
-    }
+		if (canPickUpR && Input.GetKeyUp (pickupTriggerR))
+			canPickUpR = false;
+		}
 
     // check on collision with another collider
     /*** must be trigger enabled ***/
@@ -52,15 +53,24 @@ public class PlayerPickupManager : MonoBehaviour {
                 GameObject otherObject = other.gameObject;
 
                 // append item to a node representing 
-                if(canPickUpL)
-                    AppendItem(otherObject, leftArm);
-                if (canPickUpR)
-                    AppendItem(otherObject, rightArm);
+				if (canPickUpL) {
+					print ("here");
+					AppendItem (otherObject, leftArm);
+					var item = new PlayerItemManager.Item (otherObject.name, 5, 5, 5);
+					itemManager.addItem ("left", item);
+					print (item.Name);
+				}
+				if (canPickUpR) {
+					AppendItem (otherObject, rightArm);
+					var item = new PlayerItemManager.Item (otherObject.name, 5, 5, 5);
+					itemManager.addItem ("right", item);
+					print (item.Name);
+				}
 
                 // obtain pickup's properties
                 pickupProperties = otherObject.GetComponent<PickupProperties>();
-                if (pickupProperties != null)
-                    pickupProperties.PrintProperties(); // print'em
+//                if (pickupProperties != null)
+//                    pickupProperties.PrintProperties(); // print'em
 
             }
         }

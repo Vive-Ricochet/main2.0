@@ -4,7 +4,7 @@ using System.Collections;
 public abstract class PickupProperties : MonoBehaviour {
 
     // this object's various values
-    private float durrability_value;
+    private float durability_value;
     private float attack_mod;
     private float defense_mod;
     private float weight_value;
@@ -30,8 +30,8 @@ public abstract class PickupProperties : MonoBehaviour {
         return weight_value;
     }
 
-    public float durrability() {
-        return durrability_value;
+    public float durability() {
+        return durability_value;
     }
     /////////////////////////////
 
@@ -51,5 +51,21 @@ public abstract class PickupProperties : MonoBehaviour {
             print(element);
         }
     }
-	
+
+	//Setters//
+	public void attackSet(float atk){
+		attack_mod = atk;
+	}
+
+	public void defenseSet(float def){
+		defense_mod = def;
+	}
+
+	public void weightSet(float weight){
+		weight_value = weight;
+	}
+
+	public void duraSet(float durability){
+		durability_value = durability;
+	}
 }

@@ -24,10 +24,8 @@ public class CollisionManager : MonoBehaviour {
 
     // On every update, do this
     void FixedUpdate() {
-
         // Check for collision between the players
         if (Player01 != null && Player02 != null) {
-
             // Player 01 hit innocent Player 02
             if (Player01.isDashing() && ! Player02.isDashing()) {
                 if (Player01.isColliding()) {
