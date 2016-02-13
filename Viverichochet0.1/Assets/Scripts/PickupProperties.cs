@@ -3,6 +3,12 @@ using System.Collections;
 
 public abstract class PickupProperties : MonoBehaviour {
 
+    // this object's various values
+    private float durability_value;
+    private float attack_mod;
+    private float defense_mod;
+    private float weight_value;
+
 	// create a private list of properties for this object...
     private ArrayList properties = new ArrayList();
 
@@ -10,6 +16,25 @@ public abstract class PickupProperties : MonoBehaviour {
     void Start() {
         // ...
     }
+
+    /////// GETTING VALUES /////////
+    public float attackModifier() {
+        return attack_mod;
+    }
+
+    public float defenseModifier() {
+        return defense_mod;
+    }
+
+    public float weight() {
+        return weight_value;
+    }
+
+    public float durability() {
+        return durability_value;
+
+    }
+    /////////////////////////////
 
     // properties' accessor
     public ArrayList GetProperties() {
@@ -27,5 +52,21 @@ public abstract class PickupProperties : MonoBehaviour {
             print(element);
         }
     }
-	
+
+	//Setters//
+	public void attackSet(float atk){
+		attack_mod = atk;
+	}
+
+	public void defenseSet(float def){
+		defense_mod = def;
+	}
+
+	public void weightSet(float weight){
+		weight_value = weight;
+	}
+
+	public void duraSet(float durability){
+		durability_value = durability;
+	}
 }
