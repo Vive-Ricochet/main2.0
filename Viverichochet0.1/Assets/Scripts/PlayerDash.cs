@@ -26,7 +26,6 @@ public class PlayerDash : MonoBehaviour {
 
         // Get my accessor
         myStats = GetComponent<PlayerAccesor>();
-
         // Get Player movement
         PM = GetComponent<PlayerMovement>();
 
@@ -54,7 +53,7 @@ public class PlayerDash : MonoBehaviour {
                 animate.SetFloat("IsCharging", IsCharging);
             }
 
-            if (Input.GetAxis(DashButton) != 1 && myStats.isCharging()) {
+			if (Input.GetAxis(DashButton) != 1 && myStats.isCharging()) {
 
                 newVel = Vector3.zero;
                 dashDir = camDir;

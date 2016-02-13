@@ -9,6 +9,8 @@ public class PlayerHealth : MonoBehaviour {
 	public AudioClip deathClip;
 	public AudioClip damagedClip;
 
+	//int damage = System.Math.Floor(
+
 	Animator anim;
 	AudioSource playerAudio;
 	bool isDead;
@@ -24,7 +26,7 @@ public class PlayerHealth : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (damaged) {
-			//onHit effects
+			
 		} else {
 			//reset effects
 		}
