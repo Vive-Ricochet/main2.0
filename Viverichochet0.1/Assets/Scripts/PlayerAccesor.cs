@@ -11,6 +11,11 @@ public class PlayerAccesor : MonoBehaviour {
     /////////////////////////////////////////////////////////////////
 
     /***** MISC. PLAYER VALUE GETTERS ******/
+    // The player's game object's rigid body
+    public Rigidbody getRigidbody() {
+        return GetComponent<Rigidbody>();
+    }
+
     // Game object Transform
     public Transform getTransform() {
         return this.transform;

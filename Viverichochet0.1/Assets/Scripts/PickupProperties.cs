@@ -8,6 +8,7 @@ public abstract class PickupProperties : MonoBehaviour {
     private float attack_mod;
     private float defense_mod;
     private float weight_value;
+    private bool pickupable = true;
 
 	// create a private list of properties for this object...
     private ArrayList properties = new ArrayList();
@@ -33,6 +34,10 @@ public abstract class PickupProperties : MonoBehaviour {
     public float durability() {
         return durability_value;
 
+    }
+
+    public bool isPickupable() {
+        return pickupable;
     }
     /////////////////////////////
 
@@ -69,4 +74,8 @@ public abstract class PickupProperties : MonoBehaviour {
 	public void duraSet(float durability){
 		durability_value = durability;
 	}
+
+    public void makePickupable(bool b) {
+        pickupable = false;
+    }
 }

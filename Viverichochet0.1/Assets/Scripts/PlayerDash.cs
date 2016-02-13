@@ -61,6 +61,7 @@ public class PlayerDash : MonoBehaviour {
                 myStats.setCharging(false);
                 myStats.setDashing(true);
 
+
                 IsDashing = true;
                 animate.SetBool("IsDashing", IsDashing);
             }

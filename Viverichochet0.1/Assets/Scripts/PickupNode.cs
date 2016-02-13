@@ -53,7 +53,19 @@ public class PickupNode : MonoBehaviour {
 		}
 	}
 
-	public void updateItems(GameObject item){
+	public void updateItems(PickupProperties item){
 		myItems.Add (item);
-	}
+        updateAtk(getNodeAtk() + item.attackModifier());
+        updateDef(getNodeDef() + item.defenseModifier());
+
+    }
+
+    public void printMe() {
+
+        print("This Node you just appended to's values\n"
+               + "Attack: " + getNodeAtk() + " "
+               + "Defense: " + getNodeDef() + "\n"
+               ) ;
+
+    }
 }

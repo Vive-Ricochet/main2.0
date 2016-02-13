@@ -11,13 +11,16 @@ public class PlayerNodesManager : MonoBehaviour {
     [SerializeField] private string buttonLeftArmW = "LeftArmWest_P1";
     [SerializeField] private string buttonRightArmN = "RightArmNorth_P1";
     [SerializeField] private string buttonRightArmE = "RightArmEast_P1";
+    [SerializeField] private string leftArmNodeName = "Left Arm Node";
+    [SerializeField] private string rightArmNodeName = "Right Arm Node";
 
 
-	// private fields
+
+    // private fields
     /***** NODE MANAGEMENT ******/
     // the nodes
-    PickupNode leftArmNode;
-    PickupNode rightArmNode;
+    [SerializeField] private PickupNode leftArmNode;
+    [SerializeField] private PickupNode rightArmNode;
 
     // node properties
     private string rightArmPosition;
@@ -29,6 +32,7 @@ public class PlayerNodesManager : MonoBehaviour {
     bool RF = true;
     bool RS = false;
     bool LS = false;
+    
 
 
     Animator animate;
@@ -38,11 +42,13 @@ public class PlayerNodesManager : MonoBehaviour {
     // On scene load, do this...
     void Start() {
 
-        leftArmNode  = transform.Find("Left Arm Node").GetComponent<PickupNode>();
-        rightArmNode = transform.Find("Right Arm Node").GetComponent<PickupNode>();
 
-        leftArmNode.setPosition(transform.Find("Left Arm Node"));
-        rightArmNode.setPosition(transform.Find("Right Arm Node"));
+        leftArmNode  = transform.Find(leftArmNodeName).GetComponent<PickupNode>();
+        rightArmNode = transform.Find(rightArmNodeName).GetComponent<PickupNode>();
+
+        
+        leftArmNode.setPosition(transform.Find(leftArmNodeName));
+        rightArmNode.setPosition(transform.Find(rightArmNodeName));
 
         leftArmPosition  = "North";
         rightArmPosition = "North";
@@ -69,16 +75,15 @@ public class PlayerNodesManager : MonoBehaviour {
     }
 
     void Update() {
+        bool dashing = transform.GetComponent<PlayerAccesor>().isDashing();
+        if (dashing) { dashAttack(); }
 
-        if(Input.anyKeyDown) {
+        // on pickup on pickUpTrigger activating button
+        canPickUpL = Input.GetButton(leftArmTrigger);
+        canPickUpR = Input.GetButton(rightArmTrigger);
 
-            // on pickup on pickUpTrigger activating button
-            if (Input.GetButton(leftArmTrigger)) canPickUpL = true;
-                else canPickUpL = false;
+        if (Input.anyKeyDown) {
 
-            if (Input.GetButton(rightArmTrigger)) canPickUpR = true;
-                else canPickUpR = false;
-             
             // check for moving arms to positions
             if (Input.GetButton(buttonLeftArmN))
                 moveLeftArmN();
@@ -95,52 +100,60 @@ public class PlayerNodesManager : MonoBehaviour {
     // On colliding with pickup item
     /*** must be trigger enabled ***/
     void OnTriggerEnter(Collider other) {
-
+        
         if (canPickUpL || canPickUpR) {
-
+            print("it's a pickup");
             // if other object is a "Pickup":
-            if (other.gameObject.CompareTag("Pickup")) {
+            if (other.gameObject.CompareTag("Pickup") && other.gameObject.GetComponent<PickupProperties>().isPickupable()) {
 
                 GameObject otherObject = other.gameObject;
                 // append item to a node representing 
 				if (canPickUpL) {
-					AppendItem (otherObject, "Left Arm Node");
+					AppendItem (otherObject, leftArmNode);
 				}
 				if (canPickUpR) {
-					AppendItem (otherObject, "Right Arm Node");
+					AppendItem (otherObject, rightArmNode);
 				}
-
             }
         }
     }
 
-    void AppendItem(GameObject otherObject, string nodeToAppendTo) {
+    void AppendItem(GameObject otherObject, PickupNode nodeToAppendTo) {
 
         // disable pickup's rigid body to give it that ephemeral feel
         // also make it kinematic to disable effective forces
+        // also make it unpickupable
         otherObject.GetComponent<Rigidbody>().detectCollisions = false;
         otherObject.GetComponent<Rigidbody>().isKinematic = true;
+        otherObject.GetComponent<PickupProperties>().makePickupable(false);
 
         // append object to player node, make it a child of that node
-        otherObject.transform.parent = this.transform.Find(nodeToAppendTo);
-        otherObject.transform.position = this.transform.Find(nodeToAppendTo).position;
-       
+        otherObject.transform.parent = nodeToAppendTo.transform;
+        otherObject.transform.position = nodeToAppendTo.transform.position;
+
         // obtain pickup's properties
-		var pickupProperties = otherObject.GetComponent<PickupProperties>().GetProperties();
-		otherObject.transform.GetComponentInParent<PickupNode>().updateProps (pickupProperties);
-		otherObject.transform.GetComponentInParent<PickupNode>().updateItems (otherObject);
-		if (otherObject.transform.GetComponentInParent<PickupNode>() != null) {
-			print(otherObject.transform.GetComponentInParent<PickupNode>().getNodeAtk());
-			foreach (var elemen in pickupProperties) {
-				print (elemen);
-			}
-        }
+        ArrayList pickupProperties = otherObject.GetComponent<PickupProperties>().GetProperties();
+        nodeToAppendTo.updateProps(pickupProperties);
+
+        // add the object to the node, this also updates the node's attack and defense and such
+        nodeToAppendTo.updateItems(otherObject.GetComponent<PickupProperties>());
+
+		//if (otherObject.transform.GetComponentInParent<PickupNode>() != null) {
+		//	print(otherObject.transform.GetComponentInParent<PickupNode>().getNodeAtk());
+		//	foreach (var elemen in pickupProperties) {
+		//		print (elemen);
+		//	}
+        //}
+
+        nodeToAppendTo.printMe();
     }
 
 
     /****** MOVING PLAYER'S ARMS AND SHIT *******/
     // To move arms around the player
     void moveLeftArmN() {
+        print(leftArmNode);
+
         float old_ly = leftArmNode.getTransform().localPosition.y;
         leftArmPosition = leftArmPosition.Replace("East", "North")
                                          .Replace("South", "North")
@@ -202,6 +215,19 @@ public class PlayerNodesManager : MonoBehaviour {
         RF = false;
         animate.SetBool("RF", RF);
         animate.SetBool("RS", RS);
+    }
+
+    void dashAttack(){
+            float old_ly = leftArmNode.getTransform().localPosition.y;
+            leftArmPosition = leftArmPosition.Replace("East", "North")
+                                             .Replace("South", "North")
+                                             .Replace("West", "North");
+            leftArmNode.getTransform().localPosition = new Vector3(-0.3f, old_ly, 1.0f);
+            float old_ry = rightArmNode.getTransform().localPosition.y;
+            rightArmPosition = rightArmPosition.Replace("East", "North")
+                                               .Replace("South", "North")
+                                               .Replace("West", "North");
+            rightArmNode.getTransform().localPosition = new Vector3(0.3f, old_ry, 1.0f);
     }
 
 //    void moveRightArmS() {
