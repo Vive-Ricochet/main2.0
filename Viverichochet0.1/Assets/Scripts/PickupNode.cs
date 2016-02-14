@@ -63,15 +63,14 @@ public class PickupNode : MonoBehaviour {
 
 	public void effectItemsDur() {
 
-		IEnumerator tmp = myItems.GetEnumerator();
-		while(tmp.MoveNext()) {
-			PickupProperties curr_item = (PickupProperties) tmp.Current;
-			if (curr_item != null) {
-				curr_item.useDurability ();
-				if (curr_item.durability () <= 0) {
-					myItems.Remove (curr_item);
-					Destroy (curr_item.gameObject);
-				}
+		for(int i = 0; i < myItems.Count; i++) {
+			PickupProperties curr_item = (PickupProperties)myItems [i];
+			curr_item.useDurability ();
+			if (curr_item.durability () <= 0) {
+				updateAtk (getNodeAtk () - curr_item.attackModifier ());
+				updateDef (getNodeDef () - curr_item.defenseModifier ());
+				Destroy (curr_item.gameObject);
+				myItems.Remove (curr_item);
 			}
 		}
 	}

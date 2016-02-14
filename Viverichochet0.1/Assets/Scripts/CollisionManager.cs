@@ -83,17 +83,17 @@ public class CollisionManager : MonoBehaviour {
 
             // Hit me from the left
         } else if (diffRotation.y <= -45 && diffRotation.y > -135) {
-            print("Left?\n");
+            //print("Left?\n");
             victim.eulerAngles = hisRotation + new Vector3(0f, -90f, 0f);
 
             // Hit me from the front
         } else if (diffRotation.y <= -135 && diffRotation.y > -225) {
-            print("Front?\n");
+            //print("Front?\n");
             victim.eulerAngles = hisRotation + new Vector3(0f, -180f, 0f);
 
             // Hit me from the right
         } else if (diffRotation.y <= -225 && diffRotation.y > -315) {
-            print("Right?\n");
+            //print("Right?\n");
             victim.eulerAngles = hisRotation + new Vector3(0f, +90f, 0f);
         }
 

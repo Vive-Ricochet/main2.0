@@ -86,6 +86,5 @@ public abstract class PickupProperties : MonoBehaviour {
 
 	public void useDurability() {
 		durability_value--;
-		print (durability_value);
 	}
 }
