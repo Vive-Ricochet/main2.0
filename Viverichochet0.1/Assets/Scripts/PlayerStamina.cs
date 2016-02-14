@@ -12,34 +12,40 @@ public class PlayerStamina : MonoBehaviour {
 	int dashAttack = 60;
 	int timer  = 40;
 
-	Animator anim;
+    PlayerDash playerDash;
+    Animator anim;
 	AudioSource playerAudio;
 	bool isTired;
-	bool fatigue = false;
-	bool canDash;
+	//bool fatigue = false;
+	//bool canDash = true;
 
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent <Animator> ();
 		currentStamina = startingStamina;
 		playerAudio = GetComponent <AudioSource> ();
+        playerDash  = GetComponent<PlayerDash>();
 
-	}
+    }
 
 	// Update is called once per frame
-	void Update () {
-		if (currentStamina < dashAttack || fatigue == false) {
-			fatigue = true;
-			resetFatigue ();
-		} else if (currentStamina >= dashAttack  && canDash) {
+	void FixedUpdate () {
+        print(currentStamina);
+        if (currentStamina < startingStamina)
+            if (!GetComponent<PlayerAccesor>().isCharging()) { }
+                //ApplyFatigue(-1);
+		/*if (currentStamina < dashAttack) {
+			// fatigue = true;
+			// resetFatigue ();
+		} else if (currentStamina >= dashAttack  && playerDash.IsDashing) {
 			ApplyFatigue (dashAttack);
 		}
-
+        */
 		//reset flag
 	}
 
 	public void ApplyFatigue(int amount){
-		fatigue = true;
+		//fatigue = true;
 		currentStamina -= amount;
 		StaminaSlider.value = currentStamina;
 
@@ -53,18 +59,16 @@ public class PlayerStamina : MonoBehaviour {
 	}
 
 	void resetFatigue(){
-		if (fatigue || currentStamina <100){
-			for (int i = 0; currentStamina <= 100; i++) {
+		if (playerDash.IsDashing == false || currentStamina < 100){
 				timer -= 1;
 				if (timer == 0) { currentStamina += 1; }
 				if (currentStamina >= dashAttack){
-					fatigue = false;
-					canDash = true;
-
-				}
+				//	fatigue = false;
+				//	canDash = true;
 			}
 		}
 	}
+
 	void Tired(){
 		isTired = true;
 		anim.SetTrigger ("Tired");

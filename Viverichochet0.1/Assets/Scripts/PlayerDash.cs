@@ -17,8 +17,8 @@ public class PlayerDash : MonoBehaviour {
     private Camera PlayerCamera;
 
     Animator animate;
-    float IsCharging = 0.0f;
-    bool IsDashing = false;
+    public float IsCharging = 0.0f;
+    public bool IsDashing = false;
 
     // Use this for initialization
     void Start() {
@@ -53,7 +53,7 @@ public class PlayerDash : MonoBehaviour {
                 animate.SetFloat("IsCharging", IsCharging);
             }
 
-			if (Input.GetAxis(DashButton) != 1 && myStats.isCharging()) {
+			if (Input.GetAxis(DashButton) != 1 && myStats.isCharging() && GetComponent<PlayerStamina>().currentStamina > 75) {
 
                 newVel = Vector3.zero;
                 dashDir = camDir;
@@ -73,6 +73,7 @@ public class PlayerDash : MonoBehaviour {
         //if (PM.isDashing()) {
         if (myStats.isDashing()) {
 
+            
             dashRecovery++;
             newVel += dashDir * (speed * 2f);
             transform.position += (newVel * Time.fixedDeltaTime);
@@ -91,6 +92,8 @@ public class PlayerDash : MonoBehaviour {
                 animate.SetBool("IsDashing", IsDashing);
 				IsCharging = 0.0f;
                 animate.SetFloat("IsCharging", IsCharging);
+
+                GetComponent<PlayerStamina>().ApplyFatigue(75);
             }
         }
     }
@@ -122,6 +125,8 @@ public class PlayerDash : MonoBehaviour {
     }
 		
     public void ResetDash() {
+
+
         dashRecovery = 0;
 		IsDashing = false;
 		IsCharging = 0.0f;
