@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class PlayerNodesManager : MonoBehaviour {
-
+	[SerializeField] public AudioClip pickup_sound;
     // private fields editable by inspector
     /***** BUTTONS AND SHIT ******/
     [SerializeField] private string leftArmTrigger = "Leftarm_P1";
@@ -144,7 +144,7 @@ public class PlayerNodesManager : MonoBehaviour {
 		//		print (elemen);
 		//	}
         //}
-
+		AudioSource.PlayClipAtPoint(pickup_sound, nodeToAppendTo.getTransform().position);
         nodeToAppendTo.printMe();
     }
 
@@ -229,6 +229,39 @@ public class PlayerNodesManager : MonoBehaviour {
                                                .Replace("West", "North");
             rightArmNode.getTransform().localPosition = new Vector3(0.3f, old_ry, 1.0f);
     }
+
+	public float leftarmAttack() {
+		return leftArmNode.getNodeAtk ();
+	}
+
+	public float rightarmAttack() {
+		return rightArmNode.getNodeAtk (); 
+	}
+
+	public float rightArmDefence() {
+		return rightArmNode.getNodeDef ();
+	}
+
+	public float leftArmDefence() {
+		return leftArmNode.getNodeDef ();
+	}
+
+	public string leftarmPosition() {
+		return leftArmPosition;
+	}
+
+	public string rightarmPosition() {
+		return rightArmPosition;
+	}
+
+	public void effectRightarmDur() {
+		rightArmNode.effectItemsDur();
+	}
+
+	public void effectLeftarmDur() {
+		leftArmNode.effectItemsDur ();
+	}
+
 
 //    void moveRightArmS() {
 //        float old_y = rightArmNode.getTransform().localPosition.y;

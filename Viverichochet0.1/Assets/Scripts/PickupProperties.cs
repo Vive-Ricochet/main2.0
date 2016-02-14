@@ -8,6 +8,7 @@ public abstract class PickupProperties : MonoBehaviour {
     private float attack_mod;
     private float defense_mod;
     private float weight_value;
+	private AudioClip sound;
     private bool pickupable = true;
 
 	// create a private list of properties for this object...
@@ -78,4 +79,13 @@ public abstract class PickupProperties : MonoBehaviour {
     public void makePickupable(bool b) {
         pickupable = false;
     }
+
+	public void soundSet(AudioClip s){
+		sound = s;
+	}
+
+	public void useDurability() {
+		durability_value--;
+		print (durability_value);
+	}
 }

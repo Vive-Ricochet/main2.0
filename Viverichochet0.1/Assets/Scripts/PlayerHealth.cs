@@ -3,13 +3,13 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class PlayerHealth : MonoBehaviour {
-	public int startingHealth = 100;
-	public int currentHealth;
+	public float startingHealth = 100;
+	public float currentHealth;
 	public Slider healthSlider;
 	public AudioClip deathClip;
 	public AudioClip damagedClip;
 
-	//int damage = System.Math.Floor(
+	//float damage = System.Math.Floor(
 
 	Animator anim;
 	AudioSource playerAudio;
@@ -35,7 +35,7 @@ public class PlayerHealth : MonoBehaviour {
 		damaged = false;
 	}
 
-	public void TakeDamage(int amount){
+	public void TakeDamage(float amount){
 		damaged = true;
 		currentHealth -= amount;
 		healthSlider.value = currentHealth;
@@ -50,7 +50,7 @@ public class PlayerHealth : MonoBehaviour {
 		}
 	}
 
-    public int GetCurrentHealth() {
+    public float GetCurrentHealth() {
         return currentHealth;
     }
 

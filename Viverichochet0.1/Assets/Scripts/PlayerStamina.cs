@@ -11,6 +11,7 @@ public class PlayerStamina : MonoBehaviour {
 
 	int dashAttack = 60;
 	int timer  = 40;
+	int mod = 0;
 
     PlayerDash playerDash;
     Animator anim;
@@ -30,10 +31,16 @@ public class PlayerStamina : MonoBehaviour {
 
 	// Update is called once per frame
 	void FixedUpdate () {
-        print(currentStamina);
-        if (currentStamina < startingStamina)
-            if (!GetComponent<PlayerAccesor>().isCharging()) { }
+		mod++;
+
+        //print(currentStamina);
+
+		if (currentStamina < startingStamina && mod % 4 == 0) {
+			ApplyFatigue(-1);
+		}
+		if (currentStamina < startingStamina && !GetComponent<PlayerAccesor>().isCharging() && !GetComponent<PlayerAccesor>().isDashing()){
                 //ApplyFatigue(-1);
+		}
 		/*if (currentStamina < dashAttack) {
 			// fatigue = true;
 			// resetFatigue ();
@@ -49,9 +56,9 @@ public class PlayerStamina : MonoBehaviour {
 		currentStamina -= amount;
 		StaminaSlider.value = currentStamina;
 
-		//hurt sound
-		playerAudio.clip = fatigueClip;
-		playerAudio.Play();
+		//draining sound
+		//playerAudio.clip = fatigueClip;
+		//playerAudio.Play();
 		if(currentStamina <= 0 && !isTired){
 			//kill player
 			Tired();

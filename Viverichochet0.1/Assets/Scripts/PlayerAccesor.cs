@@ -37,6 +37,10 @@ public class PlayerAccesor : MonoBehaviour {
     }
 
 
+	public void damagePlayer(float d) {
+		GetComponent<PlayerHealth>().TakeDamage (d);
+	}
+
     /////////////////////////////////////////////////////////////////
 
     /*** MISC. PLAYER VALUE SETTERS ******/

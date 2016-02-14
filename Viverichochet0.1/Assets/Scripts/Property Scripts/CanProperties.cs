@@ -9,6 +9,7 @@ public class CanProperties : PickupProperties {
 		defenseSet (6.0f);
 		weightSet (5.0f);
 		duraSet (4.0f);
+		soundSet (Resources.Load ("Sounds/metal_small") as AudioClip);
 		AddProperty ("Dents");
 		AddProperty ("Proj on break");
 	}

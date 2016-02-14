@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 public class PickupNode : MonoBehaviour {
-
+	
     // private fields
 	private ArrayList myProps = new ArrayList();
 	private ArrayList myItems = new ArrayList();
@@ -54,11 +54,27 @@ public class PickupNode : MonoBehaviour {
 	}
 
 	public void updateItems(PickupProperties item){
+		
 		myItems.Add (item);
         updateAtk(getNodeAtk() + item.attackModifier());
         updateDef(getNodeDef() + item.defenseModifier());
 
     }
+
+	public void effectItemsDur() {
+
+		IEnumerator tmp = myItems.GetEnumerator();
+		while(tmp.MoveNext()) {
+			PickupProperties curr_item = (PickupProperties) tmp.Current;
+			if (curr_item != null) {
+				curr_item.useDurability ();
+				if (curr_item.durability () <= 0) {
+					myItems.Remove (curr_item);
+					Destroy (curr_item.gameObject);
+				}
+			}
+		}
+	}
 
     public void printMe() {
 
