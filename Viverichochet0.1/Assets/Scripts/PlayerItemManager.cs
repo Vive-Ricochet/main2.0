@@ -5,6 +5,8 @@ using System.Linq;
 
 public class PlayerItemManager : MonoBehaviour
 {
+	AudioSource playerAudio; 
+
 	public class Item
 	{
 		public string Name;
@@ -14,19 +16,26 @@ public class PlayerItemManager : MonoBehaviour
 		{
 			get; set;
 		}
+		public AudioClip sound;
 
-		public Item(string name, int attack, int defense, int durability)
+		public Item(string name, int attack, int defense, int durability, AudioClip s=null)
 		{
 			Name = name;
 			Attack = attack;
 			Defense = defense;
 			Durability = durability;
+			sound = s;
 		}
 
 		public void decrementDurability()
 		{
 			Durability = Durability - 1;
 		}
+
+		public void playSound(){
+			
+		}
+
 	}
 
 	private List<PickupProperties> righthand = new List<PickupProperties>();
@@ -104,6 +113,7 @@ public class PlayerItemManager : MonoBehaviour
 
 	public void Clash(List<Item> Thishand, List<Item> Otherhand)
 	{
+		//shouldn't we be doing attack & defense on both hands? we could be more efficient by wrapping them in a single for instead of having two of the same loop
 		int attack = getTotalAttack(Thishand);
 		int defense = getTotalDefense(Otherhand);
 
