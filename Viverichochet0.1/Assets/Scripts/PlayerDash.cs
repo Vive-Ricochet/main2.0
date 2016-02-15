@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerDash : MonoBehaviour {
 
     // Private fields editable by inspector
-    [SerializeField] private int dashDuration = 20;
+    [SerializeField] private int dashDuration = 40;
     [SerializeField] private string DashButton;
 
     // Private fields
@@ -77,7 +77,7 @@ public class PlayerDash : MonoBehaviour {
 
             
             dashRecovery++;
-            newVel += dashDir * (speed * 2f);
+            newVel += dashDir * (speed * 3f);
             transform.position += (newVel * Time.fixedDeltaTime);
 
             //transform camera

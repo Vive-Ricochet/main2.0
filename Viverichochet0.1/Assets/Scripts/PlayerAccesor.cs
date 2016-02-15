@@ -36,6 +36,13 @@ public class PlayerAccesor : MonoBehaviour {
         return chargeInEffect;
     }
 
+    // get the player's arm positions
+    public string leftArmPosition() {
+        return GetComponent<PlayerNodesManager>().leftarmPosition();
+    }
+    public string rightArmPosition() {
+        return GetComponent<PlayerNodesManager>().rightarmPosition();
+    }
 
 	public void damagePlayer(float d) {
 		GetComponent<PlayerHealth>().TakeDamage (d);

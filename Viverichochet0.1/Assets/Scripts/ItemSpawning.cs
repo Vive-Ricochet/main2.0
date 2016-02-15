@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class ItemSpawning : MonoBehaviour {
     bool drop;
-	int timer = 400;
+	int timer = 600;
     [SerializeField] public List<GameObject> GameObjs = new List<GameObject>();
 
 
@@ -19,9 +19,9 @@ public class ItemSpawning : MonoBehaviour {
     void Update () {
 		if (drop == true && timer == 0) {
 			foreach (GameObject Thing in GameObjs) {
-				Vector3 randomDir = new Vector3 (Random.Range (-50.0f, 50.0f), 0, Random.Range (-50.0f, 50.0f));
+				Vector3 randomDir = new Vector3 (Random.Range (-20.0f, 20.0f), 0, Random.Range (-20.0f, 20.0f));
 				Instantiate (Thing, transform.position + randomDir, transform.rotation);
-				timer = 400;
+				timer = 600;
 			}
 		} else if (timer != 0) {
 			timer -= 1;

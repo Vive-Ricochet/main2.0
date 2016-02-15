@@ -152,8 +152,6 @@ public class PlayerNodesManager : MonoBehaviour {
     /****** MOVING PLAYER'S ARMS AND SHIT *******/
     // To move arms around the player
     void moveLeftArmN() {
-        print(leftArmNode);
-
         float old_ly = leftArmNode.getTransform().localPosition.y;
         leftArmPosition = leftArmPosition.Replace("East", "North")
                                          .Replace("South", "North")

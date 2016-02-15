@@ -60,6 +60,9 @@ public class CollisionManager : MonoBehaviour {
 		float attack = instigator.GetComponent<PlayerNodesManager>().rightarmAttack() +
 			instigator.GetComponent<PlayerNodesManager>().leftarmAttack();
 
+        // get defence ready to sum up
+        float defense = 0.0f;
+
 		// apply durabillity mod to instigator's items;
 		instigator.GetComponent<PlayerNodesManager>().effectRightarmDur();
 		instigator.GetComponent<PlayerNodesManager>().effectLeftarmDur();
@@ -78,24 +81,37 @@ public class CollisionManager : MonoBehaviour {
         // Hit me from behind
         if (diffRotation.y > -45 || diffRotation.y <= -315) {
             //print("Behind?\n");
-			victim_accessor.damagePlayer(attack);
             victim.eulerAngles = hisRotation;
 
             // Hit me from the left
         } else if (diffRotation.y <= -45 && diffRotation.y > -135) {
             //print("Left?\n");
+            if (victim_accessor.leftArmPosition() == "West")
+                defense += victim.GetComponent<PlayerNodesManager>().leftArmDefence();
             victim.eulerAngles = hisRotation + new Vector3(0f, -90f, 0f);
 
             // Hit me from the front
         } else if (diffRotation.y <= -135 && diffRotation.y > -225) {
             //print("Front?\n");
+            if (victim_accessor.rightArmPosition() == "North")
+                defense += victim.GetComponent<PlayerNodesManager>().leftArmDefence();
+            if (victim_accessor.leftArmPosition() == "North")
+                defense += victim.GetComponent<PlayerNodesManager>().leftArmDefence();
             victim.eulerAngles = hisRotation + new Vector3(0f, -180f, 0f);
 
             // Hit me from the right
         } else if (diffRotation.y <= -225 && diffRotation.y > -315) {
             //print("Right?\n");
+            if (victim_accessor.rightArmPosition() == "East")
+                defense += victim.GetComponent<PlayerNodesManager>().leftArmDefence();
             victim.eulerAngles = hisRotation + new Vector3(0f, +90f, 0f);
         }
+
+        print(defense);
+
+        float final_attack = attack - defense;
+        if (final_attack < 0) final_attack = 0;
+        victim_accessor.damagePlayer(final_attack);
 
         // FLY BABY
         BlowBack(victim.gameObject, instigator.forward);

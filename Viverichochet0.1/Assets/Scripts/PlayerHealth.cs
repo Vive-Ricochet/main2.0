@@ -3,9 +3,13 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class PlayerHealth : MonoBehaviour {
+
+    [SerializeField] GameObject spawnPoint;
+
 	public float startingHealth = 100;
 	public float currentHealth;
 	public Slider healthSlider;
+    private PlayerAccesor thisPlayer;
 	public AudioClip deathClip;
 	public AudioClip damagedClip;
 
@@ -21,6 +25,8 @@ public class PlayerHealth : MonoBehaviour {
 		anim = GetComponent <Animator> ();
 		currentHealth = startingHealth;
 		playerAudio = GetComponent <AudioSource> ();
+        thisPlayer = GetComponent<PlayerAccesor>();
+
 	}
 	
 	// Update is called once per frame
@@ -55,6 +61,8 @@ public class PlayerHealth : MonoBehaviour {
     }
 
 	void Death(){
+        currentHealth = startingHealth;
+        thisPlayer.transform.position = spawnPoint.transform.position;
 		isDead = true;
 		anim.SetTrigger ("Die");
 		playerAudio.clip = deathClip;
