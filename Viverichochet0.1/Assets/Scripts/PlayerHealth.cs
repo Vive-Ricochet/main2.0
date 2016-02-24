@@ -62,8 +62,10 @@ public class PlayerHealth : MonoBehaviour {
 
 	void Death(){
         currentHealth = startingHealth;
+        healthSlider.value = currentHealth;
         thisPlayer.transform.position = spawnPoint.transform.position;
 		isDead = true;
+        isDead = false;
 		anim.SetTrigger ("Die");
 		playerAudio.clip = deathClip;
 		playerAudio.Play ();
