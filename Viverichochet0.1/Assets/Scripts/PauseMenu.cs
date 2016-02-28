@@ -3,7 +3,9 @@ using System.Collections;
 
 public class PauseMenu : MonoBehaviour {
 
+
 	bool pause = false;
+
 
 	// Update is called once per frame
 	void Update () {
