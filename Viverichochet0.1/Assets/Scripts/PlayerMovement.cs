@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour {
     private Rigidbody rb;
 
     public bool dashing;
-    private bool canDash = false;//to be used with stamina
+    //private bool canDash = false;//to be used with stamina
 	private bool charging;
 
     // public fields
@@ -23,8 +23,9 @@ public class PlayerMovement : MonoBehaviour {
     public string Horizontal;
     public string Vertical;
 
-    float isMovingH = 0.0f;
-    float isMovingV = 0.0f;
+    bool running = false;
+    //float isMovingH = 0.0f;
+    //float isMovingV = 0.0f;
 
     void Start() {
 
@@ -35,8 +36,8 @@ public class PlayerMovement : MonoBehaviour {
 
         // rigid body used for in-engine physics 
         rb = GetComponent<Rigidbody>();
-        dashing = false;
-		charging = false;
+        //dashing = false;
+		//charging = false;
         animator = GetComponent<Animator>();
 
 
@@ -70,15 +71,20 @@ public class PlayerMovement : MonoBehaviour {
 
 
             // Get movement inputs
-            isMovingH = System.Math.Abs(Input.GetAxis(Horizontal));
-            isMovingV = System.Math.Abs(Input.GetAxis(Vertical));
+            if (System.Math.Abs(Input.GetAxis(Horizontal)) > 0 || System.Math.Abs(Input.GetAxis(Vertical)) > 0) {
+                running = true;
+            }
+            else { running = false; }
+            //isMovingH = System.Math.Abs(Input.GetAxis(Horizontal));
+            //isMovingV = System.Math.Abs(Input.GetAxis(Vertical));
 
             newVel += Input.GetAxis(Horizontal) * camRight * speed;
 			newVel += Input.GetAxis(Vertical) * camDir * speed;
 
-            if (isMovingH > 0) animator.SetFloat("IsMoving", isMovingH);
-            if (isMovingV > 0) animator.SetFloat("IsMoving", isMovingV);
-            if (isMovingH == 0 && isMovingV == 0) animator.SetFloat("IsMoving", isMovingH);
+            animator.SetBool("Running", running);
+            //if (isMovingH > 0) animator.SetFloat("IsMoving", isMovingH);
+            //if (isMovingV > 0) animator.SetFloat("IsMoving", isMovingV);
+            //if (isMovingH == 0 && isMovingV == 0) animator.SetFloat("IsMoving", isMovingH);
 
 
             // apply new velocity
