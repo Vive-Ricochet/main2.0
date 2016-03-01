@@ -94,8 +94,8 @@ public class  ProjectileMaker : MonoBehaviour {
             currentProjectile.transform.parent = null;
 
             Vector3 heading = otherPlayer.transform.position - currentProjectile.transform.position;
+            currentProjectile.GetComponent<Rigidbody>().velocity = heading.normalized * 100;
 
-            currentProjectile.GetComponent<Rigidbody>().velocity = heading.normalized * 10;
             currentProjectile = null;
             buildNewProjectile();
         }
