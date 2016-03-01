@@ -102,17 +102,17 @@ public class PlayerNodesManager : MonoBehaviour {
     void OnTriggerEnter(Collider other) {
         
         if (canPickUpL || canPickUpR) {
-            //print("it's a pickup");
+            print("it's a pickup");
             // if other object is a "Pickup":
             if (other.gameObject.CompareTag("Pickup") && other.gameObject.GetComponent<PickupProperties>().isPickupable()) {
 
                 GameObject otherObject = other.gameObject;
                 // append item to a node representing 
 				if (canPickUpL) {
-					//AppendItem (otherObject, leftArmNode);
+					AppendItem (otherObject, leftArmNode);
 				}
 				if (canPickUpR) {
-					//AppendItem (otherObject, rightArmNode);
+					AppendItem (otherObject, rightArmNode);
 				}
             }
         }

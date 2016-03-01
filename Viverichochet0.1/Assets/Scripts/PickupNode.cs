@@ -8,7 +8,6 @@ public class PickupNode : MonoBehaviour {
 	private ArrayList myItems = new ArrayList();
 	private float totalAtk;
 	private float totalDef;
-    private float radius;
 
 	//Getters
     // private fields
