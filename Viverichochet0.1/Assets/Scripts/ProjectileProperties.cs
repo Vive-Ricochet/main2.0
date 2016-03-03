@@ -12,6 +12,10 @@ public class ProjectileProperties : MonoBehaviour {
 
     // On scene load, do this
     void Start() {
+                
+        gameObject.AddComponent<SphereCollider>();
+        gameObject.AddComponent<Rigidbody>();
+
         collider  = gameObject.GetComponent<SphereCollider>();
         rigidbody = gameObject.GetComponent<Rigidbody>();
 
@@ -42,6 +46,13 @@ public class ProjectileProperties : MonoBehaviour {
         }
     }
 
+    // Get prjectile radius
+    public float getRadius() {
+        if (collider != null) {
+            return collider.radius;
+        } else return 0f;
+    }
+
     public void appendItem(GameObject otherObject) {
 
         otherObject.GetComponent<Rigidbody>().detectCollisions = false;
@@ -60,6 +71,10 @@ public class ProjectileProperties : MonoBehaviour {
 
         }
 
+        if(collider.radius == null)
+        {
+            setRadius(0f);
+        }else
         setRadius(collider.radius + 0.1f);
         itemCount++;
     }
