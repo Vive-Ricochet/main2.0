@@ -13,7 +13,7 @@ public class  ProjectileMaker : MonoBehaviour {
     private float gravity = 50;
     private bool canPickUp = false;
     private bool isThrowing = false;
-    private float throwSpeed = 60;
+    private float throwSpeed = 100;
 
     private string projectileName = "Projectile Object";
 
@@ -46,7 +46,7 @@ public class  ProjectileMaker : MonoBehaviour {
         // Create a game object with the necessary values and scripts
         GameObject projectile = new GameObject(projectileName);
         projectile.AddComponent<ProjectileProperties>();
-        projectile.GetComponent<ProjectileProperties>().Init();
+        projectile.GetComponent<ProjectileProperties>().Init(gameObject);
     
         projectile.AddComponent<PoleProperties>();
         projectile.tag = "Pickup";
@@ -56,8 +56,16 @@ public class  ProjectileMaker : MonoBehaviour {
         projectile.transform.rotation = this.transform.rotation;
         projectile.GetComponent<ProjectileProperties>().setPosition(this.transform.position + new Vector3(0, 2, 0));
 
-        //currentProjectile = projectile;
 
+        foreach (Collider blah in this.GetComponents<Collider>())
+        {
+            print("Collider: " + blah);
+            Physics.IgnoreCollision(blah, projectile.GetComponent<Collider>());
+        }
+        //print("Player Colliders? ");
+
+        //currentProjectile = projectile;
+        
         return projectile;
     }
 
@@ -106,7 +114,7 @@ public class  ProjectileMaker : MonoBehaviour {
 
 
             // jump the projectile through potential clipping objects before making active
-            Collider[] checkResult = Physics.OverlapSphere(projectilePosition, currentProjectile.GetComponent<ProjectileProperties>().getRadius());
+            /*Collider[] checkResult = Physics.OverlapSphere(projectilePosition, currentProjectile.GetComponent<ProjectileProperties>().getRadius());
             while (checkResult.Length != 0) {
 
                 print("Current position: " + currentProjectile.transform.position);
@@ -120,14 +128,14 @@ public class  ProjectileMaker : MonoBehaviour {
                 checkResult = Physics.OverlapSphere(projectilePosition, currentProjectile.GetComponent<ProjectileProperties>().getRadius());
 
                 print("Any collisions?: " + checkResult);
-            }
+            }*/
 
 
 
 
             // projectile property calculations
             float distance = new Vector2(heading.x, heading.z).magnitude; // the horizontal distance between this player and target
-            float deltaHeight = currentProjectile.transform.position.y - otherPlayer.transform.position.y - 7.5f; // projectile's relative transform height
+            float deltaHeight = currentProjectile.transform.position.y - otherPlayer.transform.position.y - 10f; // projectile's relative transform height
             float upwardsMagnitude = ((-deltaHeight * throwSpeed) / distance) - ((gravity * distance) / (2 * throwSpeed)); // projectile "y" velocity component
             //upwardsMagnitude *= 0.75f;
 
@@ -144,7 +152,10 @@ public class  ProjectileMaker : MonoBehaviour {
 
             Vector3 newVelocity = new Vector3(heading.x, 0f, heading.z).normalized * throwSpeed + new Vector3(0, -upwardsMagnitude, 0);
             currentProjectile.GetComponent<Rigidbody>().velocity = newVelocity;
+            currentProjectile.GetComponent<ProjectileProperties>().inMotion = true;
             currentProjectile = null;
+
+
         }
     }
 }

@@ -9,22 +9,44 @@ public class ProjectileProperties : MonoBehaviour {
     private SphereCollider collider;
     private Rigidbody rigidbody;
     private int itemCount = 0;
-
+    public GameObject origin;
+    public bool inMotion = false;
     // On scene load, do this
-    public void Init() {
-
+    public void Init(GameObject parent) {
         collider  = gameObject.AddComponent<SphereCollider>();
         rigidbody = gameObject.AddComponent<Rigidbody>();
+        origin = parent;
 
         collider.isTrigger = true;
         collider.radius = initialRadius;
         rigidbody.isKinematic = true;
-
     }
 
     // On every chance to update, do this
     void Update() {
+        
+    }
 
+    void OnTriggerEnter(Collider other)
+    {
+        print("collision:" + other);
+        print("parent: " + origin);
+        bool blah = false;
+
+        if (other.gameObject != origin && inMotion)
+        {
+            print("desu");
+            foreach (Collider box in origin.GetComponents<BoxCollider>())
+            {
+                if (!blah)
+                {
+                    Physics.IgnoreCollision(GetComponent<SphereCollider>(), box, false);
+                }
+            }
+        } else
+        {
+            print("no desu");
+        }
     }
 
     // Get this object's item count

@@ -39,7 +39,7 @@ public class Parry : MonoBehaviour {
 
     void OnTriggerEnter(Collider other) {
         if (canParry)
-            print("I'm hit");
+            print("I'm hit: "+other);
     }
 
     private void parry() {
