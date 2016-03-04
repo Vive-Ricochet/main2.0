@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField] private float jump = 5;   // player intitial jump velocity
     [SerializeField] private float rotationSpeed = 100; // player rotation speed
 	[SerializeField] private Camera PlayerCamera;
+    [SerializeField] private string inScore;
 
     // private fields
     PlayerAccesor myStats;
@@ -52,6 +53,13 @@ public class PlayerMovement : MonoBehaviour {
     void FixedUpdate() {
 
         //print(dashing);
+        if (Input.GetButtonDown(inScore))
+        {
+            if (inScore.Equals("Plus_1"))
+                Score_p1.score += 1;
+            else if (inScore.Equals("Plus_2"))
+                Score_p2.score += 1;
+        }
 
         // get normalized camera forward direction. Ignor Y transformation
 		Vector3 camDir = PlayerCamera.transform.forward;

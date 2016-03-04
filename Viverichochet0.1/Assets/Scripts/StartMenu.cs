@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class StartMenu : MonoBehaviour {
 
@@ -16,7 +17,7 @@ public class StartMenu : MonoBehaviour {
 
     public void StartMatch()
     {
-        Application.LoadLevel(1);
+        SceneManager.LoadScene(1);
     }
 
     public void ExitGame()
