@@ -150,15 +150,15 @@ public class  ProjectileMaker : MonoBehaviour {
             currentProjectile.GetComponent<Rigidbody>().detectCollisions = true;
             currentProjectile.GetComponent<SphereCollider>().isTrigger = false;
 
-<<<<<<< HEAD
-            Vector3 heading = otherPlayer.transform.position - currentProjectile.transform.position;
+//<<<<<<< HEAD
+            //Vector3 heading = otherPlayer.transform.position - currentProjectile.transform.position;
             currentProjectile.GetComponent<Rigidbody>().velocity = heading.normalized * 100;
 
-=======
+//=======
             Vector3 newVelocity = new Vector3(heading.x, 0f, heading.z).normalized * throwSpeed + new Vector3(0, -upwardsMagnitude, 0);
             currentProjectile.GetComponent<Rigidbody>().velocity = newVelocity;
             currentProjectile.GetComponent<ProjectileProperties>().inMotion = true;
->>>>>>> dec0a721f882c7dd8331827ec0e1f50b2df4405b
+//>>>>>>> dec0a721f882c7dd8331827ec0e1f50b2df4405b
             currentProjectile = null;
 
 
