@@ -11,17 +11,15 @@ public class ProjectileProperties : MonoBehaviour {
     private int itemCount = 0;
 
     // On scene load, do this
-    void Start() {
-                
-        gameObject.AddComponent<SphereCollider>();
-        gameObject.AddComponent<Rigidbody>();
+    public void Init() {
 
-        collider  = gameObject.GetComponent<SphereCollider>();
-        rigidbody = gameObject.GetComponent<Rigidbody>();
+        collider  = gameObject.AddComponent<SphereCollider>();
+        rigidbody = gameObject.AddComponent<Rigidbody>();
 
         collider.isTrigger = true;
         collider.radius = initialRadius;
         rigidbody.isKinematic = true;
+
     }
 
     // On every chance to update, do this
@@ -70,11 +68,7 @@ public class ProjectileProperties : MonoBehaviour {
             otherObject.transform.RotateAround(this.transform.position, new Vector3 (Random.Range(0, 359), Random.Range(0, 359), Random.Range(0, 359)), Random.Range(0, 359));
 
         }
-
-        if(collider.radius == null)
-        {
-            setRadius(0f);
-        }else
+        
         setRadius(collider.radius + 0.1f);
         itemCount++;
     }
