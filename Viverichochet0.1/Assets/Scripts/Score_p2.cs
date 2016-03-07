@@ -15,6 +15,7 @@ public class Score_p2 : MonoBehaviour {
         print("awake" + round);
         text = GetComponent<Text>();
         round = score;
+        if (score == 5) round = 0;
         //score = 0;
     }
 
@@ -23,6 +24,13 @@ public class Score_p2 : MonoBehaviour {
     void Update()
     {
         text.text = "Score " + score;
+
+        if (score == 5) 
+        {
+            round = 0;
+            SceneManager.LoadScene(1);
+            
+        }
 
         if (score == round + 1)
         {

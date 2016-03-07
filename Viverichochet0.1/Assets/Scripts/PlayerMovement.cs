@@ -56,9 +56,9 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetButtonDown(inScore))
         {
             if (inScore.Equals("Plus_1"))
-                Score_p1.score += 1;
+                ScoreManager.scoreP1 += 1;
             else if (inScore.Equals("Plus_2"))
-                Score_p2.score += 1;
+                ScoreManager.scoreP2 += 1;
         }
 
         // get normalized camera forward direction. Ignor Y transformation
