@@ -19,8 +19,9 @@ public class ScoreManager : MonoBehaviour {
         //  print("awake" + finished);
         textP1 = GameObject.Find("ScoreText_P1").GetComponent<Text>();
         textP2 = GameObject.Find("ScoreText_P2").GetComponent<Text>();
+        if (scoreP1 == 5 || scoreP2 == 5) { scoreP2 = 0; scoreP1 = 0; }
         round = scoreP1 + scoreP2;
-
+        
         //    print(score + " " + finished);
         //score = 0;
     }
@@ -34,8 +35,7 @@ public class ScoreManager : MonoBehaviour {
 
         if (scoreP1 == 5 || scoreP2 == 5)
         {
-            
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
         if (scoreP1 == round + 1 || scoreP2 == round + 1)
         {
