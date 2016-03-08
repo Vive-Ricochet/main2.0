@@ -8,7 +8,7 @@ public class  ProjectileMaker : MonoBehaviour {
     [SerializeField] private GameObject otherPlayer;
 
 
-    private GameObject currentProjectile = null;
+    public GameObject currentProjectile = null;
 
     private float gravity = 50;
     private bool canPickUp = false;
@@ -41,14 +41,15 @@ public class  ProjectileMaker : MonoBehaviour {
 	}
     
     // How to build a new projectile
-    GameObject buildNewProjectile() {
+    public GameObject buildNewProjectile() {
 
         // Create a game object with the necessary values and scripts
         GameObject projectile = new GameObject(projectileName);
         projectile.AddComponent<ProjectileProperties>();
         projectile.GetComponent<ProjectileProperties>().Init(gameObject);
     
-        projectile.AddComponent<PoleProperties>();
+        // This part is for the projectile's properties as a pickup after laying still
+        projectile.AddComponent<StillProjectile>();
         projectile.tag = "Pickup";
 
         // Set initial values (transforms, radius, etc.) of the ProjectileProperties
@@ -57,14 +58,9 @@ public class  ProjectileMaker : MonoBehaviour {
         projectile.GetComponent<ProjectileProperties>().setPosition(this.transform.position + new Vector3(0, 2, 0));
 
 
-        foreach (Collider blah in this.GetComponents<Collider>())
-        {
-            print("Collider: " + blah);
+        foreach (Collider blah in this.GetComponents<Collider>()) {
             Physics.IgnoreCollision(blah, projectile.GetComponent<Collider>());
         }
-        //print("Player Colliders? ");
-
-        //currentProjectile = projectile;
         
         return projectile;
     }
@@ -75,25 +71,28 @@ public class  ProjectileMaker : MonoBehaviour {
     void OnTriggerEnter(Collider other) {
 
         if (canPickUp) {
+            if (other.gameObject.CompareTag("Pickup") && other.gameObject.GetComponent<PickupProperties>().isPickupable()) {
 
-                if (other.gameObject.CompareTag("Pickup") && other.gameObject.GetComponent<PickupProperties>().isPickupable()) {
-
-                    if (currentProjectile == null) {
-                        currentProjectile = buildNewProjectile();
-                    }
-      
-
-                    GameObject otherObject = other.gameObject;
-                    Transform thisTransform = currentProjectile.transform;
-                    ProjectileProperties thisProjectile = currentProjectile.GetComponent<ProjectileProperties>();
-
-                    currentProjectile.GetComponent<ProjectileProperties>().appendItem(otherObject);
-
-                    float amount = currentProjectile.GetComponent<ProjectileProperties>().getRadius() + GetComponent<BoxCollider>().size.y / 2;
-                    print(amount);
-                    currentProjectile.transform.localPosition = new Vector3(0f, amount, 0f); 
-                }
+                appendItem(other);
+            }
         }
+    }
+
+    // Append an item to the current projectile
+    public void appendItem(Collider other) {
+
+        if (currentProjectile == null) {
+            currentProjectile = buildNewProjectile();
+        }
+
+        GameObject otherObject = other.gameObject;
+        Transform thisTransform = currentProjectile.transform;
+        ProjectileProperties thisProjectile = currentProjectile.GetComponent<ProjectileProperties>();
+
+        currentProjectile.GetComponent<ProjectileProperties>().appendItem(otherObject);
+
+        float amount = currentProjectile.GetComponent<ProjectileProperties>().getRadius() + GetComponent<BoxCollider>().size.y / 2;
+        currentProjectile.transform.localPosition = new Vector3(0f, amount, 0f); 
     }
 
     // Spin a ball for some reason
@@ -110,55 +109,22 @@ public class  ProjectileMaker : MonoBehaviour {
             // getting initial projectile references
             Vector3 projectilePosition = currentProjectile.transform.position;
             Vector3 heading = otherPlayer.transform.position - currentProjectile.transform.position; // the vector between this player and target
-            ///print(heading);
-
-
-            // jump the projectile through potential clipping objects before making active
-            /*Collider[] checkResult = Physics.OverlapSphere(projectilePosition, currentProjectile.GetComponent<ProjectileProperties>().getRadius());
-            while (checkResult.Length != 0) {
-
-                print("Current position: " + currentProjectile.transform.position);
-                print("Move this way: " + heading);
-
-                currentProjectile.transform.position = currentProjectile.transform.position + heading.normalized + new Vector3(0, 0.1f, 0);
-
-                print("New position: " + currentProjectile.transform.position);
-
-                projectilePosition = currentProjectile.transform.position;
-                checkResult = Physics.OverlapSphere(projectilePosition, currentProjectile.GetComponent<ProjectileProperties>().getRadius());
-
-                print("Any collisions?: " + checkResult);
-            }*/
-
-
-
 
             // projectile property calculations
             float distance = new Vector2(heading.x, heading.z).magnitude; // the horizontal distance between this player and target
             float deltaHeight = currentProjectile.transform.position.y - otherPlayer.transform.position.y - 10f; // projectile's relative transform height
             float upwardsMagnitude = ((-deltaHeight * throwSpeed) / distance) - ((gravity * distance) / (2 * throwSpeed)); // projectile "y" velocity component
-            //upwardsMagnitude *= 0.75f;
 
-            print(upwardsMagnitude);
-
-            print("Height difference: " + deltaHeight);
-            print("Horizontal difference: " + distance);
-
-
+            // reset projectile's inherited values
             currentProjectile.transform.parent = null;
             currentProjectile.GetComponent<Rigidbody>().isKinematic = false;
             currentProjectile.GetComponent<Rigidbody>().detectCollisions = true;
             currentProjectile.GetComponent<SphereCollider>().isTrigger = false;
 
-<<<<<<< HEAD
-            Vector3 heading = otherPlayer.transform.position - currentProjectile.transform.position;
-            currentProjectile.GetComponent<Rigidbody>().velocity = heading.normalized * 100;
-
-=======
+            // apply new velocity
             Vector3 newVelocity = new Vector3(heading.x, 0f, heading.z).normalized * throwSpeed + new Vector3(0, -upwardsMagnitude, 0);
             currentProjectile.GetComponent<Rigidbody>().velocity = newVelocity;
             currentProjectile.GetComponent<ProjectileProperties>().inMotion = true;
->>>>>>> dec0a721f882c7dd8331827ec0e1f50b2df4405b
             currentProjectile = null;
 
 

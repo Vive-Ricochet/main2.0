@@ -3,55 +3,70 @@ using System.Collections;
 
 public class Parry : MonoBehaviour {
 
-    [SerializeField]
-    private string parryButton = "Rightarm_P1";
+    [SerializeField] private string parryButton = "Leftarm_P1";
 
     private int startFrame;
     private int parryProgress;
-    [SerializeField] private int parryWindow = 20;
-
+    private int parryWindow = 20;
     private Collider parryBox;
 
     private bool parrying = false;
-    private bool canParry = false;
+    public bool canParry = false;
+
+    private Vector3 playerScreenPos;
+    private Camera playerCamera;
+
+    [SerializeField] private Texture parrySprite;
 
 	// Use this for initialization
 	void Start () {
-
+        
         foreach(BoxCollider box in GetComponents<BoxCollider>()) {
             if (box.isTrigger)
                 parryBox = box;
         }
 
+        playerCamera = GetComponent<PlayerMovement>().PlayerCamera;
     }
 	
-	// Update is called once per frame
+	// Update is called once per engine update (not frame refresh)
 	void Update () {
 
         if (Input.GetButton(parryButton) && !parrying) {
-            
             parrying = true;
-            parry();
+            startFrame = Time.frameCount;
+            GetComponent<PlayerMovement>().canMove = false;
         }
 
+        if (parrying && Time.frameCount - startFrame < parryWindow) {
+            canParry = true;
+            playerScreenPos = playerCamera.WorldToScreenPoint(transform.position);
+            
+        } else {
+            canParry = false;
+            parrying = false;
+            GetComponent<PlayerMovement>().canMove = true;
+        }
+    }
+
+    void OnGUI() {
+        if (parrySprite && canParry) {
+            GUI.DrawTexture(new Rect(playerScreenPos.x - 38, Screen.height - playerScreenPos.y - 38, 80, 80), parrySprite);
+        }
     }
 
 
     void OnTriggerEnter(Collider other) {
-        if (canParry)
-            print("I'm hit: "+other);
+        ProjectileProperties projectile = other.gameObject.GetComponent<ProjectileProperties>();
+        if (projectile != null) {
+            if (projectile.inMotion && canParry) {
+                parry(other);
+            }
+        }
     }
 
-    private void parry() {
+    private void parry(Collider other) {
 
-        startFrame = Time.frameCount;
-        if (Time.frameCount - startFrame < parryWindow) {
-
-            canParry = true;
-        } else {
-
-            canParry = false;
-            parrying = false;
-        }
+        GetComponent<ProjectileMaker>().appendItem(other);
     }
 }

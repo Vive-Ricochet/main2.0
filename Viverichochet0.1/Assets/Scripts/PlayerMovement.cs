@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField] private float speed = 20;  // player movement speed
     [SerializeField] private float jump = 5;   // player intitial jump velocity
     [SerializeField] private float rotationSpeed = 100; // player rotation speed
-	[SerializeField] private Camera PlayerCamera;
+	[SerializeField] public Camera PlayerCamera;
 
     // private fields
     PlayerAccesor myStats;
@@ -15,8 +15,10 @@ public class PlayerMovement : MonoBehaviour {
     private Rigidbody rb;
 
     public bool dashing;
-    private bool canDash = false;//to be used with stamina
+    public bool canMove = true;
+    private bool canDash = false; //to be used with stamina
 	private bool charging;
+
 
     // public fields
     Animator animator;
@@ -66,7 +68,7 @@ public class PlayerMovement : MonoBehaviour {
         // calculate movement transformations
         // (apply only if not dashing currently)
         //if (dashing==false && charging == false) {
-        if ( myStats.isDashing() == false && myStats.isCharging() == false) {
+        if ( canMove ) {
 
 
             // Get movement inputs
