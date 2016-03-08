@@ -11,6 +11,7 @@ public class ProjectileProperties : MonoBehaviour {
     private int itemCount = 0;
     public GameObject origin;
     public bool inMotion = false;
+
     // On scene load, do this
     public void Init(GameObject parent) {
         collider  = gameObject.AddComponent<SphereCollider>();
@@ -25,27 +26,33 @@ public class ProjectileProperties : MonoBehaviour {
     // On every chance to update, do this
     void Update() {
         
+        if (inMotion) {
+            if (rigidbody.velocity.magnitude <= 10f) {
+                inMotion = false;
+                GetComponent<StillProjectile>().makePickupable(true);
+            }
+        }
+
+        if (transform.parent != null) {
+            canPickUp = false;
+        }
     }
 
-    void OnTriggerEnter(Collider other)
-    {
-        print("collision:" + other);
-        print("parent: " + origin);
+    void OnTriggerEnter(Collider other) {
+        
+       // print("collision:" + other);
+        //print("parent: " + origin);
         bool blah = false;
 
-        if (other.gameObject != origin && inMotion)
-        {
-            print("desu");
-            foreach (Collider box in origin.GetComponents<BoxCollider>())
-            {
-                if (!blah)
-                {
+        if (other.gameObject != origin && inMotion) {
+          //  print("desu");
+            foreach (Collider box in origin.GetComponents<BoxCollider>()) {
+                if (!blah) {
                     Physics.IgnoreCollision(GetComponent<SphereCollider>(), box, false);
                 }
             }
-        } else
-        {
-            print("no desu");
+        } else {
+            //print("no desu");
         }
     }
 

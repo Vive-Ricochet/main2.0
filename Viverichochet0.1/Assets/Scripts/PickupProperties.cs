@@ -77,7 +77,7 @@ public abstract class PickupProperties : MonoBehaviour {
 	}
 
     public void makePickupable(bool b) {
-        pickupable = false;
+        pickupable = b;
     }
 
 	public void soundSet(AudioClip s){
