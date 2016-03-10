@@ -14,6 +14,8 @@ public class  ProjectileMaker : MonoBehaviour {
     private bool canPickUp = false;
     private bool isThrowing = false;
     private float throwSpeed = 100;
+    Animator animator;
+    bool throwing = false;
 
     private string projectileName = "Projectile Object";
 
@@ -21,12 +23,14 @@ public class  ProjectileMaker : MonoBehaviour {
 	void Start () {
         //buildNewProjectile();
         Physics.gravity = Vector3.down * gravity;
-	}
+        animator = GetComponent<Animator>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
 
         canPickUp = Input.GetButton(pickupTrigger);
+        print(isThrowing);
 
         if (Input.GetAxis(throwTrigger) == 1) {
             isThrowing = true;
@@ -34,6 +38,7 @@ public class  ProjectileMaker : MonoBehaviour {
         }
 
         if (isThrowing && Input.GetAxis(throwTrigger) != 1) {
+            throwing = false;
             isThrowing = false;
             throwBall();
         }
@@ -105,6 +110,8 @@ public class  ProjectileMaker : MonoBehaviour {
     // Throw a ball
     void throwBall() {
         if (currentProjectile != null) {
+            throwing = true;
+            animator.SetBool("Throwing", throwing);
 
             // getting initial projectile references
             Vector3 projectilePosition = currentProjectile.transform.position;

@@ -14,11 +14,15 @@ public class ResultTo : MonoBehaviour {
 
     public void RestartMatch()
     {
+        ScoreManager.scoreP1 = 0;
+        ScoreManager.scoreP2 = 0;
         SceneManager.LoadScene(1);
     }
 
     public void RestartGame()
     {
+        ScoreManager.scoreP1 = 0;
+        ScoreManager.scoreP2 = 0;
         SceneManager.LoadScene(0);
     }
 }

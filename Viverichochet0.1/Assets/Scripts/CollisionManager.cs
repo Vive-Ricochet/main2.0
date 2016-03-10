@@ -3,33 +3,76 @@ using System.Collections;
 
 public class CollisionManager : MonoBehaviour {
 
-	// Check if player has been hit by a moving projectile
+    public bool hit = false;
+    int timer;
+
+    void FixedUpdate()
+    {
+        timer -= 1;
+        if (timer == 0)
+        {
+            hit = true;
+        }
+    }	// Check if player has been hit by a moving projectile
     void OnCollisionEnter(Collision other) {
 
         // The agent is a projectile
-        if (other.gameObject.GetComponent<ProjectileProperties>() != null) {
-            if (other.gameObject.GetComponent<ProjectileProperties>().inMotion && !GetComponent<Parry>().canParry) {
-                
+        if (other.gameObject.GetComponent<ProjectileProperties>() != null)
+        {
+            if (other.gameObject.GetComponent<ProjectileProperties>().inMotion && !GetComponent<Parry>().canParry)
+            {
+
+                other.gameObject.GetComponent<ProjectileProperties>().inMotion = false;
+                Vector3 obj_velocity = other.gameObject.GetComponent<Rigidbody>().velocity;
+
                 // Affect the player
-                hitPlayer();
+                hitPlayer(obj_velocity);
 
                 // Split up the incoming object and scatter
-                /*for (int i = 0; i < other.transform.childCount; i++) {
+                Transform[] all_transforms = other.gameObject.GetComponentsInChildren<Transform>();
+                foreach (Transform child in all_transforms)
+                {
 
-                    Transform child = other.transform.GetChild(i);
-                    other.transform.GetChild(i).parent = null;
-                    StillProjectile child_properties = child.gameObject.GetComponent<StillProjectile>();
-                    if (child_properties != null)
-                        child.gameObject.GetComponent<StillProjectile>().makePickupable(true);
-                }*/
+                    if (child.parent == other.gameObject.transform)
+                    {
 
-                other.rigidbody.velocity = new Vector3(0, 50f, 0);
+                        child.parent = null;
+                        child.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+                        child.gameObject.GetComponent<Rigidbody>().detectCollisions = true;
+                        child.gameObject.GetComponent<Rigidbody>().angularVelocity = new Vector3(Random.Range(-60, 60), Random.Range(-60, 60), Random.Range(-60, 60));
+                        child.gameObject.GetComponent<Rigidbody>().velocity = new Vector3(Random.Range(-20, 20), 40f, Random.Range(-20, 20));
+
+                        child.gameObject.GetComponent<PickupProperties>().makePickupable(true);
+                    }
+                }
             }
         }
     }
 
     // The player has been it
-    void hitPlayer() {
+    public void hitPlayer(Vector3 obj_velocity) {
+        timer = 120;
+
+        obj_velocity = obj_velocity.normalized;
+        obj_velocity *= 0.5f;
+        obj_velocity.y = 50f;
+
+        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+        GetComponent<Rigidbody>().velocity = obj_velocity;
+        GetComponent<Rigidbody>().angularVelocity = new Vector3(50f, 0f, 50f);
+
+        float delay = 0.07f;
+        float start_time = Time.realtimeSinceStartup;
+        //Time.timeScale = 0.0f;
+
+        //while (Time.realtimeSinceStartup - start_time < delay) {
+        //  GetComponent<PlayerMovement>().canMove = false;
+        //}
+
+        GetComponent<PlayerMovement>().canMove = false;
+        Time.timeScale = 1.0f;
+
+        //hit = true;
         print("Player hit!");
     }
 }

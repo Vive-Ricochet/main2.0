@@ -7,7 +7,7 @@ public class ResultManager : MonoBehaviour {
 
     Text textP1;
     Text textP2;
-
+    
 
 
     void Start()
@@ -17,7 +17,10 @@ public class ResultManager : MonoBehaviour {
         textP2 = GameObject.Find("p2Score").GetComponent<Text>();
         textP1.text = "Score " + ScoreManager.scoreP1;
         textP2.text = "Score " + ScoreManager.scoreP2;
+         
     }
+
+    
 
 
 

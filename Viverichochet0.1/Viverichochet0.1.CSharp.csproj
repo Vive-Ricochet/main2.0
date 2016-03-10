@@ -58,12 +58,6 @@
     <Reference Include="UnityEngine.Networking">
       <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Networking">
-      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
@@ -80,6 +74,7 @@
     <Compile Include="Assets\Scripts\CollisionManager.cs" />
     <Compile Include="Assets\Scripts\ItemSpawning.cs" />
     <Compile Include="Assets\Scripts\Parry.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\PickupNode.cs" />
     <Compile Include="Assets\Scripts\PickupProperties.cs" />
     <Compile Include="Assets\Scripts\PlayerAccesor.cs" />
@@ -103,6 +98,10 @@
     <Compile Include="Assets\Scripts\Property Scripts\PoleProperties.cs" />
     <Compile Include="Assets\Scripts\Property Scripts\SphereProperties.cs" />
     <Compile Include="Assets\Scripts\Property Scripts\StillProjectile.cs" />
+    <Compile Include="Assets\Scripts\ResultManager.cs" />
+    <Compile Include="Assets\Scripts\ResultTo.cs" />
+    <Compile Include="Assets\Scripts\ScoreManager.cs" />
+    <Compile Include="Assets\Scripts\StartMenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\Cameras\CameraGuidelines.txt" />

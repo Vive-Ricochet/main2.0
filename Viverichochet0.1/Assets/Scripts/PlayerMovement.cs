@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour {
     [SerializeField] private float jump = 5;   // player intitial jump velocity
     [SerializeField] private float rotationSpeed = 100; // player rotation speed
 	[SerializeField] public Camera PlayerCamera;
+ //   [SerializeField] private string inScore;
 
     // private fields
     PlayerAccesor myStats;
@@ -17,7 +18,9 @@ public class PlayerMovement : MonoBehaviour {
     public bool dashing;
     public bool canMove = true;
     private bool canDash = false; //to be used with stamina
+    //private bool canDash = false;//to be used with stamina
 	private bool charging;
+
 
 
     // public fields
@@ -25,8 +28,9 @@ public class PlayerMovement : MonoBehaviour {
     public string Horizontal;
     public string Vertical;
 
-    float isMovingH = 0.0f;
-    float isMovingV = 0.0f;
+    bool running = false;
+    //float isMovingH = 0.0f;
+    //float isMovingV = 0.0f;
 
     void Start() {
 
@@ -37,8 +41,8 @@ public class PlayerMovement : MonoBehaviour {
 
         // rigid body used for in-engine physics 
         rb = GetComponent<Rigidbody>();
-        dashing = false;
-		charging = false;
+        //dashing = false;
+		//charging = false;
         animator = GetComponent<Animator>();
 
 
@@ -53,6 +57,13 @@ public class PlayerMovement : MonoBehaviour {
     void FixedUpdate() {
 
         //print(dashing);
+   /*     if (Input.GetButtonDown(inScore))
+        {
+            if (inScore.Equals("Plus_1"))
+                ScoreManager.scoreP1 += 1;
+            else if (inScore.Equals("Plus_2"))
+                ScoreManager.scoreP2 += 1;
+        } */
 
         // get normalized camera forward direction. Ignor Y transformation
 		Vector3 camDir = PlayerCamera.transform.forward;
@@ -72,15 +83,20 @@ public class PlayerMovement : MonoBehaviour {
 
 
             // Get movement inputs
-            isMovingH = System.Math.Abs(Input.GetAxis(Horizontal));
-            isMovingV = System.Math.Abs(Input.GetAxis(Vertical));
+            if (System.Math.Abs(Input.GetAxis(Horizontal)) > 0 || System.Math.Abs(Input.GetAxis(Vertical)) > 0) {
+                running = true;
+            }
+            else { running = false; }
+            //isMovingH = System.Math.Abs(Input.GetAxis(Horizontal));
+            //isMovingV = System.Math.Abs(Input.GetAxis(Vertical));
 
             newVel += Input.GetAxis(Horizontal) * camRight * speed;
 			newVel += Input.GetAxis(Vertical) * camDir * speed;
 
-            if (isMovingH > 0) animator.SetFloat("IsMoving", isMovingH);
-            if (isMovingV > 0) animator.SetFloat("IsMoving", isMovingV);
-            if (isMovingH == 0 && isMovingV == 0) animator.SetFloat("IsMoving", isMovingH);
+            animator.SetBool("Running", running);
+            //if (isMovingH > 0) animator.SetFloat("IsMoving", isMovingH);
+            //if (isMovingV > 0) animator.SetFloat("IsMoving", isMovingV);
+            //if (isMovingH == 0 && isMovingV == 0) animator.SetFloat("IsMoving", isMovingH);
 
 
             // apply new velocity
